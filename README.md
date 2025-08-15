@@ -1,274 +1,233 @@
-# 🤖 Enhanced Feedback Analysis Dashboard
+# 📊 Customer Feedback Analysis System
 
-A comprehensive customer feedback analysis system with AI-powered insights, built with Streamlit and OpenAI integration.
+A Streamlit-based application for analyzing and prioritizing customer feedback using AI-powered categorization and strategic alignment scoring.
 
 ## 🚀 Features
 
-### 📊 **Dual Processing Systems**
-- **Original System**: Rule-based feedback processing with keyword matching
-- **Enhanced System**: AI-powered analysis using OpenAI GPT-3.5 for superior categorization and insights
+### Core Functionality
+- **📤 Data Upload**: Upload CSV files with customer feedback
+- **🤖 AI Processing**: Automatic categorization using NLP
+- **🎯 Priority Scoring**: Strategic alignment-based prioritization
+- **📈 Interactive Dashboard**: Real-time analytics and visualizations
+- **⚙️ Configurable Goals**: Manage strategic business objectives
 
-### 🎯 **Key Capabilities**
-- **Smart Categorization**: 8-10 categories with context-aware AI analysis
-- **Sentiment Analysis**: Nuanced emotion detection with sarcasm understanding
-- **Strategic Alignment**: Business goal alignment scoring
-- **Priority Scoring**: Multi-factor priority calculation
-- **Entity Extraction**: Intelligent identification of key terms and features
-- **Actionable Insights**: AI-generated recommendations and business insights
+### Key Capabilities
+- **Automatic Categorization**: 8 predefined categories (UI, Performance, Functionality, etc.)
+- **Sentiment Analysis**: Positive/negative sentiment scoring
+- **Strategic Alignment**: Score feedback against business goals
+- **Priority Ranking**: Multi-factor priority calculation
+- **Data Visualization**: Charts and analytics for insights
 
-## 📁 Project Structure
+## 🏗️ Architecture
 
+### Components
+- **`feedback_app.py`**: Main Streamlit application
+- **`feedback_processor.py`**: NLP processing and analysis engine
+- **`database_manager.py`**: SQLite database operations
+- **`sample_data_generator.py`**: Mock data generation for testing
+
+### Database Schema
+```sql
+-- Feedback items table
+CREATE TABLE feedback_items (
+    id TEXT PRIMARY KEY,
+    feedback_text TEXT NOT NULL,
+    cleaned_text TEXT,
+    source_type TEXT,
+    date TEXT,
+    category TEXT,
+    confidence_score REAL,
+    sentiment_score REAL,
+    strategic_alignment_score REAL,
+    priority_score REAL,
+    key_entities TEXT,
+    processed_date TEXT
+);
+
+-- Strategic goals table
+CREATE TABLE strategic_goals (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    goal_name TEXT UNIQUE NOT NULL,
+    description TEXT,
+    weight INTEGER DEFAULT 5,
+    created_date TEXT
+);
 ```
-FeedbackProject/
-├── enhanced_feedback_processor.py    # AI-enhanced processing engine
-├── enhanced_feedback_app.py          # Enhanced Streamlit app (AI-powered)
-├── feedback_processor.py             # Original fallback processor
-├── feedback_app.py                   # Original Streamlit app
-├── database_manager.py               # Database operations
-├── install_enhanced.py               # Installation script
-├── requirements.txt                  # Dependencies
-├── test_feedback_fixed.csv           # Sample data for testing
-├── README.md                         # This file
-├── README_ENHANCED.md                # Detailed enhanced system docs
-└── .env                             # Environment variables (create with your API key)
-```
 
-## 🛠️ Installation
+## 🛠️ Installation & Setup
 
 ### Prerequisites
 - Python 3.8+
-- OpenAI API key
+- pip
 
-### Quick Setup
-```bash
-# Clone the repository
-git clone https://github.com/ashleyyv/Feedback-Dashboard.git
-cd Feedback-Dashboard
+### Installation Steps
+1. **Clone/Setup Project**
+   ```bash
+   cd FeedbackProject
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-# Install dependencies
-pip install -r requirements.txt
+3. **Generate Sample Data** (Optional)
+   ```bash
+   python sample_data_generator.py
+   ```
 
-# Set up environment variables
-echo "OPENAI_API_KEY=your-api-key-here" > .env
+4. **Run the Application**
+   ```bash
+   streamlit run feedback_app.py
+   ```
 
-# Run installation script
-python install_enhanced.py
+5. **Access the Application**
+   - Open your browser to: `http://localhost:8501`
+
+## 📊 Usage Guide
+
+### 1. Dashboard Overview
+- **Key Metrics**: Total feedback, average priority, top category
+- **Category Distribution**: Visual breakdown of feedback types
+- **Recent Feedback**: Latest processed items
+
+### 2. Upload Feedback
+- **Supported Format**: CSV files with columns: `feedback_text`, `source_type`, `date`
+- **Sample Data**: Download sample CSV for reference
+- **Processing**: Automatic categorization and scoring
+
+### 3. Analysis Features
+- **Filtering**: By category, source, and priority score
+- **Visualizations**: Priority distribution, category analysis
+- **Top Priority**: Highest-scoring feedback items
+
+### 4. Settings Management
+- **Strategic Goals**: Add/modify business objectives
+- **System Info**: Database status and statistics
+
+## 🎯 Feedback Categories
+
+The system automatically categorizes feedback into:
+
+1. **User Interface**: UI/UX design, layout, visual elements
+2. **Performance**: Speed, loading times, optimization
+3. **Functionality**: Features, capabilities, tools
+4. **Data & Analytics**: Reports, charts, visualizations
+5. **User Experience**: Usability, workflow, ease of use
+6. **Technical Issues**: Bugs, errors, system problems
+7. **Mobile**: Mobile app, responsive design
+8. **Integration**: APIs, third-party connections
+
+## 🧮 Priority Scoring Algorithm
+
+The priority score combines multiple factors:
+
+```
+Priority Score = (Confidence × 0.3) + (Sentiment Impact × 0.2) + (Strategic Alignment × 0.4) × Source Multiplier
 ```
 
-## 🚀 Running the Applications
+Where:
+- **Confidence**: Category classification confidence (0-10)
+- **Sentiment Impact**: Negative sentiment increases priority
+- **Strategic Alignment**: Alignment with business goals (0-10)
+- **Source Multiplier**: Support (1.2x), Sales (1.0x), Research (0.8x)
 
-### Option 1: Enhanced AI-Powered System (Recommended)
-```bash
-streamlit run enhanced_feedback_app.py --server.port 8502
+## 📁 File Structure
+
 ```
-**Access**: http://localhost:8502
-
-### Option 2: Original System
-```bash
-streamlit run feedback_app.py --server.port 8501
+FeedbackProject/
+├── feedback_app.py              # Main Streamlit application
+├── feedback_processor.py        # NLP processing engine
+├── database_manager.py          # Database operations
+├── sample_data_generator.py     # Mock data generator
+├── requirements.txt             # Python dependencies
+├── sample_feedback.csv          # Sample data file
+├── feedback.db                  # SQLite database
+└── README.md                    # This file
 ```
-**Access**: http://localhost:8501
-
-### Option 3: Run Both for Comparison
-```bash
-# Terminal 1
-streamlit run feedback_app.py --server.port 8501
-
-# Terminal 2
-streamlit run enhanced_feedback_app.py --server.port 8502
-```
-
-## 📊 Analysis Criteria
-
-### 🏷️ **Categorization System**
-- **User Interface**: UI/UX design, layout, buttons, menus
-- **Performance**: Speed, loading times, responsiveness
-- **Functionality**: Features, tools, capabilities, workflow
-- **Data & Analytics**: Reports, charts, dashboards, visualization
-- **User Experience**: Usability, ease of use, accessibility
-- **Technical Issues**: Bugs, errors, crashes, system problems
-- **Mobile**: Mobile app, phone, tablet, responsive design
-- **Integration**: APIs, third-party connections, data sync
-- **Security**: Authentication, privacy, data protection
-- **Support**: Customer service, help, documentation
-
-### 🎯 **Priority Scoring Formula**
-```python
-priority_score = (
-    (confidence * 0.3) +                    # 30% - Categorization confidence
-    ((10 - sentiment) * 0.2) +              # 20% - Negative sentiment = higher priority
-    (strategic_alignment * 0.4) +           # 40% - Business goal alignment
-) * source_multiplier                       # Source type multiplier
-```
-
-### 📈 **Strategic Goals**
-| Goal | Weight | Keywords |
-|------|--------|----------|
-| **Optimize Performance** | 9 | slow, performance, speed, loading, optimization |
-| **Improve User Onboarding** | 8 | onboarding, first time, new user, tutorial |
-| **Enhance Security** | 8 | security, privacy, authentication, login |
-| **Enhance Data Visualization** | 7 | chart, graph, visualization, dashboard |
-| **Improve Mobile Experience** | 6 | mobile, app, phone, responsive |
-
-## 🎯 Usage Guide
-
-### 1. **Upload Feedback Data**
-- Navigate to "📤 Upload Feedback"
-- Enable "🤖 AI-Enhanced Analysis" for AI processing
-- Upload CSV file with columns: `feedback_text`, `source_type`, `date`
-- Click "🚀 Process Feedback"
-
-### 2. **View Analysis Results**
-- **Dashboard**: Overview metrics and recent feedback
-- **Analysis**: Detailed categorization and priority analysis
-- **AI Insights**: AI-generated actionable recommendations
-
-### 3. **Sample Data Format**
-```csv
-feedback_text,source_type,date
-"The mobile app is too slow to load",support,2024-01-15
-"We need better data visualization features",sales,2024-01-16
-"Great user interface, very intuitive",research,2024-01-17
-```
-
-## 🔄 **AI vs Fallback Processing**
-
-### **When AI is Used**
-- Feedback > 50 characters
-- Support tickets (high priority)
-- Ambiguous feedback (contains: maybe, perhaps, unclear)
-- Complex technical issues
-
-### **When Fallback is Used**
-- Short, simple feedback
-- Clear, straightforward issues
-- Cost optimization for simple cases
-
-## 📊 **Performance Comparison**
-
-| Feature | Original System | Enhanced System |
-|---------|----------------|-----------------|
-| **Categorization Accuracy** | 70-80% | 90-95% |
-| **Sentiment Precision** | 60-70% | 85-90% |
-| **Entity Extraction** | Basic regex | Intelligent NLP |
-| **Insights Generation** | None | AI-powered |
-| **Processing Speed** | Instant | 1-3 seconds per item |
-| **Cost** | Free | ~$0.002 per 1K tokens |
 
 ## 🔧 Configuration
 
-### **Environment Variables**
+### Strategic Goals
+Default strategic goals with weights:
+- **Improve User Onboarding** (Weight: 8)
+- **Enhance Data Visualization** (Weight: 7)
+- **Optimize Performance** (Weight: 9)
+- **Improve Mobile Experience** (Weight: 6)
+- **Enhance Security** (Weight: 8)
+
+### Customization
+- Add new categories in `feedback_processor.py`
+- Modify strategic goals through the Settings page
+- Adjust scoring weights in the priority algorithm
+
+## 🚀 Future Enhancements
+
+### Planned Features
+- **Advanced NLP**: spaCy integration for better entity recognition
+- **Machine Learning**: Predictive analytics for feedback trends
+- **API Integration**: Connect to external feedback sources
+- **Real-time Processing**: Webhook support for live feedback
+- **Advanced Analytics**: Trend analysis and forecasting
+- **Export Capabilities**: PDF reports and data export
+
+### Technical Improvements
+- **Scalability**: PostgreSQL migration for larger datasets
+- **Performance**: Caching and optimization
+- **Security**: User authentication and data encryption
+- **Monitoring**: Application metrics and error tracking
+
+## 🐛 Troubleshooting
+
+### Common Issues
+1. **Port Already in Use**: Change port with `streamlit run feedback_app.py --server.port 8502`
+2. **Database Errors**: Delete `feedback.db` to reset
+3. **Import Errors**: Ensure all dependencies are installed
+4. **Performance Issues**: Reduce sample data size for testing
+
+### Debug Mode
 ```bash
-# .env file
-OPENAI_API_KEY=your-api-key-here
-MIN_TEXT_LENGTH_FOR_AI=50
-ALWAYS_USE_AI_FOR_SUPPORT=true
+streamlit run feedback_app.py --logger.level debug
 ```
 
-### **Customizing Categories**
-Edit `enhanced_feedback_processor.py`:
+## 📈 Sample Data
+
+The system includes a sample data generator that creates realistic feedback data:
+
 ```python
-self.enhanced_categories = {
-    'Your New Category': 'Description of what this category covers',
-    # ... existing categories
-}
+# Generate 100 sample feedback records
+python sample_data_generator.py
 ```
 
-### **Modifying Strategic Goals**
-```python
-self.strategic_goals = {
-    'Your New Goal': {
-        'keywords': ['keyword1', 'keyword2'],
-        'weight': 8,
-        'description': 'Goal description'
-    },
-    # ... existing goals
-}
-```
-
-## 🚨 Troubleshooting
-
-### **Common Issues**
-
-#### 1. OpenAI API Errors
-```
-Error: You exceeded your current quota
-```
-**Solution**: Check your API key and billing status
-
-#### 2. Import Errors
-```
-ModuleNotFoundError: No module named 'openai'
-```
-**Solution**: Run `pip install openai python-dotenv`
-
-#### 3. Database Errors
-```
-Error: table feedback_items has no column named analysis_method
-```
-**Solution**: Delete `feedback.db` and restart (it will be recreated)
-
-### **Performance Optimization**
-- Process in smaller batches (100-500 items)
-- Use fallback processing for simple feedback
-- Monitor API usage and costs
-
-## 🔒 Security & Privacy
-
-### **Data Handling**
-- Feedback text is sent to OpenAI API for analysis
-- No data is stored by OpenAI (as per their privacy policy)
-- All processed data is stored locally in SQLite database
-
-### **API Key Security**
-- Store API key in `.env` file (not in code)
-- Never commit API keys to version control
-- Use environment variables in production
-
-## 📞 Support
-
-### **Getting Help**
-1. Check the troubleshooting section above
-2. Review `README_ENHANCED.md` for detailed documentation
-3. Test with the sample CSV file provided
-
-### **Sample Data**
-Use `test_feedback_fixed.csv` for testing:
+Sample feedback format:
 ```csv
 feedback_text,source_type,date
 "The mobile app is too slow to load",support,2024-01-15
 "We need better data visualization features",sales,2024-01-16
-"Login process is confusing for new users",support,2024-01-17
-"Great user interface, very intuitive",research,2024-01-18
-"Please add export functionality to the dashboard",sales,2024-01-19
+"Login process is confusing",support,2024-01-17
 ```
 
-## 🎉 Success Metrics
+## 🤝 Contributing
 
-After implementation, you should see:
-- **Higher categorization accuracy** (90%+ vs 70-80%)
-- **Better sentiment analysis** (understanding context and sarcasm)
-- **Actionable insights** (AI-generated recommendations)
-- **Improved priority scoring** (more accurate business alignment)
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🤝 Contributing
+## 🆘 Support
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+For issues and questions:
+1. Check the troubleshooting section
+2. Review the code comments
+3. Create an issue in the repository
 
 ---
 
-**Ready to get started? Run `python install_enhanced.py` and follow the prompts!** 🚀
-
-**Access the enhanced AI-powered system at: http://localhost:8502**
+**Built with ❤️ using Streamlit, Python, and AI/ML technologies**
