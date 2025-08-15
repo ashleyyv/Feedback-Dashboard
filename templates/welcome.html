@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Adventure</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="welcome-page">
+        <!-- Animated background elements will be added by JavaScript -->
+        
+        <div class="rocket-icon">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItcm9ja2V0Ij48cGF0aCBkPSJNMTkgMTRjMS40OS0xLjQ2IDIuODYtMy4wNiAzLjk5LTQuNzZDMjMuNjUgNy44MyAyNCA2LjIxIDI0IDQuMjVDMjQgMy4yNSAyMy41IDAgMjAuNzUgMGMtMS45NiAwLTMuNTguMzUtNC43OS45N0MxNC4wNiAyLjExIDEyLjQ2IDMuNDggMTEgNC45N0w1IDEwLjk3QzUgMTAuOTcgMi41NiAxNS4xNiAyLjU2IDE1LjE2TDAgMjRsMTAuOTctMy44MWMwIDAgMy4xNi0xLjY1IDMuMTYtMS42NUwxOSAxNHoiPjwvcGF0aD48cGF0aCBkPSJNMTggOWE0IDQgMCAxIDEtOCAwIDQgNCAwIDAgMSA4IDB6Ij48L3BhdGg+PC9zdmc+" alt="Rocket">
+        </div>
+        
+        <div class="welcome-content">
+            <h1 class="welcome-title">Welcome!</h1>
+            <p class="welcome-subtitle">Ready to embark on your</p>
+            <div class="financial-adventure">
+                Financial Adventure?
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <p class="welcome-description">
+                Discover the exciting world of finance through interactive exploration,
+                unlock achievements, and level up your financial knowledge!
+            </p>
+            <a href="/about" class="cta-button">
+                <i class="fas fa-rocket"></i> Get Started
+            </a>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Welcome Page JavaScript -->
+    <script src="{{ url_for('static', filename='js/welcome.js') }}"></script>
+</body>
+</html>

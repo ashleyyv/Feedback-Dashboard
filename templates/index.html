@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Data Pipeline Status</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .status {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid #4CAF50;
+            margin: 20px 0;
+        }
+        .failure {
+            border-left-color: #f44336;
+        }
+        .data-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .chart-container {
+            margin: 30px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .chart-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .chart-box {
+            flex: 1;
+            min-width: 300px;
+            height: 300px;
+            position: relative;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+        .chart-title {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: bold;
+        }
+        .data-box {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 3px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+        .run-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .run-button:hover {
+            background-color: #45a049;
+        }
+        .run-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .processing-message {
+            display: none;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #856404;
+        }
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .history-table th, .history-table td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .history-table th {
+            background-color: #f2f2f2;
+        }
+        .history-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .history-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .success-status {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .failure-status {
+            color: #f44336;
+            font-weight: bold;
+        }
+        .explanation {
+            background-color: #e7f3fe;
+            border-left: 5px solid #2196F3;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Financial Data Pipeline Status</h1>
+    <p class="explanation">
+        This dashboard provides a comprehensive view of the financial data pipeline, allowing you to monitor its status,
+        view data samples, and manually trigger new data processing runs.
+    </p>
+    
+    <div class="status {% if 'FAILURE' in status_message %}failure{% endif %}">
+        <h2>Last Run Status:</h2>
+        <p>{{ status_message }}</p>
+        <p class="explanation">
+            This indicator shows the result of the most recent pipeline execution, including when it ran and how many records were processed.
+            A green indicator means the pipeline ran successfully, while a red indicator signals an error occurred.
+        </p>
+    </div>
+    
+    <div>
+        <h2>Pipeline Controls</h2>
+        <p class="explanation">
+            This section allows you to manually start the data processing pipeline. When you click the button,
+            the system will fetch new financial data, standardize it, and store it in the database.
+        </p>
+        <div style="margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+            <div>
+                <label for="dataTypeSelect" style="font-weight: bold; display: block; margin-bottom: 5px;">Select Data Type:</label>
+                <select id="dataTypeSelect" style="padding: 8px; border-radius: 4px; border: 1px solid #ddd; min-width: 180px;">
+                    <option value="Historical Prices" selected>Historical Prices</option>
+                    <option value="Income Statement">Income Statement</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="companySelect" style="font-weight: bold; display: block; margin-bottom: 5px;">Select Company:</label>
+                <select id="companySelect" style="padding: 8px; border-radius: 4px; border: 1px solid #ddd; min-width: 180px;">
+                    <option value="AAPL" selected>Apple Inc. (AAPL)</option>
+                    <option value="MSFT">Microsoft Corp. (MSFT)</option>
+                    <option value="GOOGL">Alphabet Inc. (GOOGL)</option>
+                    <option value="AMZN">Amazon.com Inc. (AMZN)</option>
+                    <option value="META">Meta Platforms Inc. (META)</option>
+                    <option value="TSLA">Tesla Inc. (TSLA)</option>
+                    <option value="NVDA">NVIDIA Corp. (NVDA)</option>
+                    <option value="JPM">JPMorgan Chase & Co. (JPM)</option>
+                    <option value="JNJ">Johnson & Johnson (JNJ)</option>
+                    <option value="V">Visa Inc. (V)</option>
+                </select>
+            </div>
+        </div>
+        <button id="runPipelineBtn" class="run-button">Run Pipeline Now</button>
+        <div id="processingMessage" class="processing-message">
+            <p>⚙️ <strong>Pipeline running...</strong> This may take a few moments. The page will refresh automatically when complete.</p>
+        </div>
+    </div>
+    
+    <h2>Before & After Data View</h2>
+    <p class="explanation">
+        This section demonstrates how the pipeline transforms raw financial data into a standardized format.
+        The left side shows the original data with inconsistent date and value formats, while the right side
+        shows the same data after standardization with consistent formats (YYYY-MM-DD dates and numeric values).
+    </p>
+    
+    <div class="data-container">
+        <div class="data-box">
+            <h3>Raw Data Sample</h3>
+            <p class="explanation">
+                Original data before processing, showing dates and values in various inconsistent formats.
+            </p>
+            <pre>{{ raw_data_sample|safe }}</pre>
+        </div>
+        
+        <div class="data-box">
+            <h3>Standardized Data Sample</h3>
+            <p class="explanation">
+                The same data after standardization, with consistent date formats (YYYY-MM-DD) and numeric values.
+            </p>
+            <pre>{{ standardized_data_sample|safe }}</pre>
+        </div>
+    </div>
+    
+    <h2>Pipeline Run History</h2>
+    <p class="explanation">
+        This table shows the recent history of pipeline executions, including when each run occurred,
+        whether it was successful, and how many records were processed. This helps track pipeline activity over time.
+    </p>
+    
+    {% if pipeline_history %}
+    <table class="history-table">
+        <thead>
+            <tr>
+                <th>Run ID</th>
+                <th>Timestamp</th>
+                <th>Status</th>
+                <th>Records Processed</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for run in pipeline_history %}
+            <tr>
+                <td>{{ run.run_id }}</td>
+                <td>{{ run.timestamp }}</td>
+                <td class="{% if run.status == 'SUCCESS' %}success-status{% else %}failure-status{% endif %}">
+                    {{ run.status }}
+                </td>
+                <td>{{ run.records_processed }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No pipeline run history available yet. Run the pipeline to create history records.</p>
+    {% endif %}
+    
+    <div class="chart-container">
+        <h2>Advanced Data Visualization</h2>
+        <p class="explanation">
+            This section provides interactive visualizations of historical stock price trends over time,
+            allowing you to analyze financial performance and identify patterns.
+        </p>
+        
+        <div style="margin-bottom: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 15px;">
+            <div>
+                <label for="chartDataTypeSelect" style="font-weight: bold; display: block; margin-bottom: 5px;">Data Type:</label>
+                <select id="chartDataTypeSelect" style="padding: 8px; border-radius: 4px; border: 1px solid #ddd; min-width: 180px;">
+                    <option value="Historical Prices" selected>Historical Prices</option>
+                    <option value="Income Statement">Income Statement</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="chartCompanySelect" style="font-weight: bold; display: block; margin-bottom: 5px;">Select Company:</label>
+                <select id="chartCompanySelect" style="padding: 8px; border-radius: 4px; border: 1px solid #ddd; min-width: 180px;">
+                    <option value="AAPL" selected>Apple Inc. (AAPL)</option>
+                    <option value="MSFT">Microsoft Corp. (MSFT)</option>
+                    <option value="GOOGL">Alphabet Inc. (GOOGL)</option>
+                    <option value="AMZN">Amazon.com Inc. (AMZN)</option>
+                    <option value="META">Meta Platforms Inc. (META)</option>
+                    <option value="TSLA">Tesla Inc. (TSLA)</option>
+                    <option value="NVDA">NVIDIA Corp. (NVDA)</option>
+                    <option value="JPM">JPMorgan Chase & Co. (JPM)</option>
+                    <option value="JNJ">Johnson & Johnson (JNJ)</option>
+                    <option value="V">Visa Inc. (V)</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="symbolSelect" style="font-weight: bold; display: block; margin-bottom: 5px;">Select Category:</label>
+                <select id="symbolSelect" style="padding: 8px; border-radius: 4px; border: 1px solid #ddd; min-width: 180px;">
+                    <option value="Revenue">Revenue</option>
+                    <option value="Expenses">Expenses</option>
+                    <option value="Assets">Assets</option>
+                    <option value="Consulting services" selected>Consulting Services</option>
+                    <option value="Investments">Investments</option>
+                </select>
+            </div>
+            
+            <div style="margin-top: 25px;">
+                <button id="updateChartBtn" style="padding: 8px 16px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                    Update Chart
+                </button>
+            </div>
+        </div>
+        
+        <div class="chart-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div class="chart-box" style="width: 100%; height: 400px;">
+                <h3 class="chart-title" id="mainChartTitle">Financial Data Visualization</h3>
+                <canvas id="mainFinancialChart"></canvas>
+            </div>
+            
+            <div class="chart-box" id="secondaryChartContainer" style="width: 100%; height: 300px; display: none;">
+                <h3 class="chart-title" id="secondaryChartTitle">Additional Data Insights</h3>
+                <canvas id="secondaryFinancialChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <h2>About This Pipeline</h2>
+        <p class="explanation">
+            This section explains what the financial data pipeline does and the steps it performs to process the data.
+        </p>
+        <p>This financial data pipeline performs the following steps:</p>
+        <ol>
+            <li>Fetches financial data for your selected company from Financial Modeling Prep API</li>
+            <li>Standardizes dates and values according to defined rules</li>
+            <li>Loads the standardized data into a SQLite database</li>
+        </ol>
+        <p class="explanation">
+            You can now select which company you want to fetch data for using the dropdown menu in the Pipeline Controls section.
+            This allows you to analyze financial data from different companies and compare their performance.
+        </p>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const runButton = document.getElementById('runPipelineBtn');
+            const processingMessage = document.getElementById('processingMessage');
+            
+            runButton.addEventListener('click', function() {
+                // Disable button to prevent multiple clicks
+                runButton.disabled = true;
+                
+                // Show processing message
+                processingMessage.style.display = 'block';
+                
+                // Get selected data type and company
+                const dataType = document.getElementById('dataTypeSelect').value;
+                const symbol = document.getElementById('companySelect').value;
+                
+                // Update processing message to include company
+                processingMessage.innerHTML = `<p>⚙️ <strong>Pipeline running...</strong> Fetching ${dataType} data for ${symbol}. This may take a few moments. The page will refresh automatically when complete.</p>`;
+                
+                // Send request to run pipeline with data type and company
+                fetch('/run_pipeline', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        data_type: dataType,
+                        symbol: symbol
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Set up automatic refresh to check for completion
+                    setTimeout(function() {
+                        location.reload();
+                    }, 5000); // Refresh after 5 seconds
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('Error starting pipeline: ' + error);
+                    
+                    // Re-enable button and hide message on error
+                    runButton.disabled = false;
+                    processingMessage.style.display = 'none';
+                });
+            });
+        });
+        
+        // Chart.js implementation for financial data visualization
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get elements
+            const symbolSelect = document.getElementById('symbolSelect');
+            const chartCompanySelect = document.getElementById('chartCompanySelect');
+            const dataTypeSelect = document.getElementById('chartDataTypeSelect');
+            const updateChartBtn = document.getElementById('updateChartBtn');
+            const mainChartTitle = document.getElementById('mainChartTitle');
+            const secondaryChartContainer = document.getElementById('secondaryChartContainer');
+            
+            // Sync company dropdowns (pipeline and chart)
+            const pipelineCompanySelect = document.getElementById('companySelect');
+            pipelineCompanySelect.addEventListener('change', function() {
+                chartCompanySelect.value = pipelineCompanySelect.value;
+            });
+            
+            chartCompanySelect.addEventListener('change', function() {
+                pipelineCompanySelect.value = chartCompanySelect.value;
+            });
+            
+            // Load available data types
+            loadDataTypes();
+            
+            // Initialize chart with default values
+            fetchAndDisplayChart(symbolSelect.value, dataTypeSelect.value, chartCompanySelect.value);
+            
+            // Add event listener for the update button
+            updateChartBtn.addEventListener('click', function() {
+                fetchAndDisplayChart(symbolSelect.value, dataTypeSelect.value, chartCompanySelect.value);
+            });
+            
+            // Add event listener for data type change
+            dataTypeSelect.addEventListener('change', function() {
+                // Update symbol options based on data type
+                updateSymbolOptions(dataTypeSelect.value);
+            });
+        });
+        
+        // Function to load available data types from the API
+        function loadDataTypes() {
+            fetch('/api/data_types')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        console.error('Error fetching data types:', data.error);
+                        return;
+                    }
+                    
+                    // Populate data type select
+                    const dataTypeSelect = document.getElementById('chartDataTypeSelect');
+                    dataTypeSelect.innerHTML = ''; // Clear existing options
+                    
+                    data.data_types.forEach(type => {
+                        const option = document.createElement('option');
+                        option.value = type;
+                        option.textContent = type;
+                        dataTypeSelect.appendChild(option);
+                    });
+                    
+                    // Update symbol options based on selected data type
+                    updateSymbolOptions(dataTypeSelect.value);
+                })
+                .catch(error => {
+                    console.error('Error loading data types:', error);
+                });
+        }
+        
+        // Function to update symbol options based on data type
+        function updateSymbolOptions(dataType) {
+            const symbolSelect = document.getElementById('symbolSelect');
+            
+            // For Income Statement data type, show different options
+            if (dataType === 'Income Statement') {
+                // Clear existing options
+                symbolSelect.innerHTML = '';
+                
+                // Add income statement categories (simplified)
+                const categories = [
+                    'Revenue', 'Expenses', 'Profit',
+                    'Net Income'
+                ];
+                
+                categories.forEach(category => {
+                    const option = document.createElement('option');
+                    option.value = category;
+                    option.textContent = category;
+                    symbolSelect.appendChild(option);
+                });
+                
+                // Select first option by default
+                symbolSelect.selectedIndex = 0;
+            } else {
+                // For Historical Prices, keep the original options
+                // We don't need to change anything as the original options are already in the HTML
+            }
+        }
+        
+        // Function to fetch data and display the chart
+        function fetchAndDisplayChart(symbol, dataType, company) {
+            // Show loading state
+            const canvas = document.getElementById('mainFinancialChart');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = '16px Arial';
+            ctx.fillText('Loading chart data...', canvas.width/2 - 80, canvas.height/2);
+            
+            // Update chart title based on data type
+            const mainChartTitle = document.getElementById('mainChartTitle');
+            if (dataType === 'Income Statement') {
+                mainChartTitle.textContent = `${company} - ${symbol} Trends (Income Statement)`;
+            } else {
+                mainChartTitle.textContent = `${company} - ${symbol} Price History`;
+            }
+            
+            // Fetch data for the selected symbol, data type, and company
+            fetch(`/api/historical_chart_data/${encodeURIComponent(symbol)}?data_type=${encodeURIComponent(dataType)}&company=${encodeURIComponent(company)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        console.error('Error fetching chart data:', data.error);
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        ctx.fillText('Error loading data: ' + data.error, canvas.width/2 - 100, canvas.height/2);
+                        return;
+                    }
+                    
+                    // Create the appropriate chart based on data type
+                    if (data.data_type === 'Income Statement') {
+                        createIncomeStatementChart(data.symbol, data.dates, data.values);
+                    } else {
+                        createHistoricalPriceChart(data.symbol, data.dates, data.values);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.fillText('Error loading data: ' + error, canvas.width/2 - 100, canvas.height/2);
+                });
+        }
+        
+        // Function to create the historical price chart (line chart)
+        function createHistoricalPriceChart(symbol, dates, values) {
+            // Get company name from the dropdown
+            const company = document.getElementById('chartCompanySelect').value;
+            const companyName = document.getElementById('chartCompanySelect').options[document.getElementById('chartCompanySelect').selectedIndex].text;
+            
+            // Destroy existing charts if they exist
+            if (window.mainChart) {
+                window.mainChart.destroy();
+            }
+            if (window.secondaryChart) {
+                window.secondaryChart.destroy();
+            }
+            
+            // Hide secondary chart container for historical prices
+            document.getElementById('secondaryChartContainer').style.display = 'none';
+            
+            const ctx = document.getElementById('mainFinancialChart').getContext('2d');
+            
+            // Create gradient for the background
+            const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+            gradient.addColorStop(0, 'rgba(54, 162, 235, 0.2)');
+            gradient.addColorStop(1, 'rgba(54, 162, 235, 0)');
+            
+            // Create the chart
+            window.mainChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dates,
+                    datasets: [{
+                        label: `${companyName} - ${symbol} Value ($)`,
+                        data: values,
+                        backgroundColor: gradient,
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        pointRadius: 3,
+                        pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value.toLocaleString();
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Value'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Date'
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return '$' + context.raw.toLocaleString();
+                                }
+                            }
+                        },
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        title: {
+                            display: true,
+                            text: `${companyName} - ${symbol} Value Trend`,
+                            font: {
+                                size: 16
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Function to create income statement chart (bar chart)
+        function createIncomeStatementChart(category, dates, values) {
+            // Get company name from the dropdown
+            const company = document.getElementById('chartCompanySelect').value;
+            const companyName = document.getElementById('chartCompanySelect').options[document.getElementById('chartCompanySelect').selectedIndex].text;
+            
+            // Destroy existing charts if they exist
+            if (window.mainChart) {
+                window.mainChart.destroy();
+            }
+            if (window.secondaryChart) {
+                window.secondaryChart.destroy();
+            }
+            
+            // Show secondary chart container for income statement
+            document.getElementById('secondaryChartContainer').style.display = 'block';
+            document.getElementById('secondaryChartTitle').textContent = `${companyName} - ${category} Quarterly Comparison`;
+            
+            // Create the main bar chart
+            const mainCtx = document.getElementById('mainFinancialChart').getContext('2d');
+            
+            // Define colors for bars
+            const barColors = [
+                'rgba(75, 192, 192, 0.7)',
+                'rgba(54, 162, 235, 0.7)',
+                'rgba(153, 102, 255, 0.7)',
+                'rgba(255, 159, 64, 0.7)',
+                'rgba(255, 99, 132, 0.7)',
+                'rgba(255, 205, 86, 0.7)'
+            ];
+            
+            // Create the main bar chart
+            window.mainChart = new Chart(mainCtx, {
+                type: 'bar',
+                data: {
+                    labels: dates,
+                    datasets: [{
+                        label: category,
+                        data: values,
+                        backgroundColor: barColors,
+                        borderColor: barColors.map(color => color.replace('0.7', '1')),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value.toLocaleString();
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Amount ($)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Period'
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return '$' + context.raw.toLocaleString();
+                                }
+                            }
+                        },
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        title: {
+                            display: true,
+                            text: `${companyName} - ${category} Trend Analysis`,
+                            font: {
+                                size: 16
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Create the secondary chart (horizontal bar for comparison)
+            const secondaryCtx = document.getElementById('secondaryFinancialChart').getContext('2d');
+            
+            // Create data for the horizontal bar chart (latest 4 periods)
+            const latestDates = dates.slice(-4);
+            const latestValues = values.slice(-4);
+            
+            window.secondaryChart = new Chart(secondaryCtx, {
+                type: 'bar',
+                data: {
+                    labels: latestDates,
+                    datasets: [{
+                        label: category,
+                        data: latestValues,
+                        backgroundColor: barColors.slice(0, 4),
+                        borderColor: barColors.slice(0, 4).map(color => color.replace('0.7', '1')),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value.toLocaleString();
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Amount ($)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return '$' + context.raw.toLocaleString();
+                                }
+                            }
+                        },
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

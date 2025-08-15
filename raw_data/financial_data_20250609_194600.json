@@ -1,0 +1,602 @@
+[
+  {
+    "id": "bb631344-c551-42fc-8470-16297c3564e4",
+    "date": "Jan 31, 2025",
+    "value": "8,519",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "5dcb52fe-0db4-4e6c-987e-531f10f3f2c2",
+    "date": "12-Jan-2025",
+    "value": "8,457",
+    "description": "Vendor payment"
+  },
+  {
+    "id": "b4fb6152-a0f5-46d5-9cdb-a9faab6895bb",
+    "date": "05/25/2025",
+    "value": "4,149",
+    "description": "Software license"
+  },
+  {
+    "id": "85ebffc1-819e-472f-9b7e-91eecce7f8db",
+    "date": "Aug 10, 2024",
+    "value": "2,663",
+    "description": "Software license"
+  },
+  {
+    "id": "cf405ca4-7191-4466-acc5-ad05749845da",
+    "date": "Apr 21, 2025",
+    "value": "$670.65",
+    "description": "Utility bill"
+  },
+  {
+    "id": "e0acb1c2-c112-4205-abb8-7634ec0d2edd",
+    "date": "09/10/2024",
+    "value": "$9854.83",
+    "description": "Client invoice"
+  },
+  {
+    "id": "93f2277d-7727-427e-88bf-97a3bbe01212",
+    "date": "2025-02-20",
+    "value": "$3743.83",
+    "description": "Utility bill"
+  },
+  {
+    "id": "3b2a0ccc-f50f-448a-9ed9-9c8c0de0cd50",
+    "date": "21-Apr-2025",
+    "value": "$1796.26",
+    "description": "Utility bill"
+  },
+  {
+    "id": "fb2410f2-ce68-4f4a-9ef8-1d8cb8e26087",
+    "date": "09-Dec-2024",
+    "value": "$1098.80",
+    "description": "Vendor payment"
+  },
+  {
+    "id": "bc63a416-34f5-41c8-a261-d9eaa2ddba2b",
+    "date": "04/26/2025",
+    "value": "$9754.10",
+    "description": "Consulting services"
+  },
+  {
+    "id": "dbf53841-7497-42d4-89a2-47f9b8de8e20",
+    "date": "09/25/2024",
+    "value": "$2248.43",
+    "description": "Consulting services"
+  },
+  {
+    "id": "222989cf-42e3-4e9e-8c9f-e78c1b66c7d7",
+    "date": "18-Jul-2024",
+    "value": "$7739.22",
+    "description": "Travel expense"
+  },
+  {
+    "id": "d5b5d0ed-ce65-422d-8e42-dc7432b1acd7",
+    "date": "2024-09-22",
+    "value": "$1471.28",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "81c9eb01-f2a8-4fbe-b5eb-483929ff54c2",
+    "date": "Sep 20, 2024",
+    "value": "$5734.25",
+    "description": "Client invoice"
+  },
+  {
+    "id": "4051dac7-299c-473a-aef2-c9cb149f3bd5",
+    "date": "2025-03-04",
+    "value": "4,573",
+    "description": "Office supplies"
+  },
+  {
+    "id": "6e387e7d-759d-4c24-8b11-68434315e71f",
+    "date": "07/03/2024",
+    "value": "8,074",
+    "description": "Software license"
+  },
+  {
+    "id": "f365e881-697d-4ba9-800c-d8a92366c261",
+    "date": "Mar 23, 2025",
+    "value": "$8598.55",
+    "description": "Software license"
+  },
+  {
+    "id": "844fe792-e4b8-4c72-9d67-7bc163299a40",
+    "date": "26-Dec-2024",
+    "value": "$4858.75",
+    "description": "Client invoice"
+  },
+  {
+    "id": "b6355840-b92c-40ef-9e25-e98a394e0935",
+    "date": "08/20/2024",
+    "value": "$8778.00",
+    "description": "Office supplies"
+  },
+  {
+    "id": "3401ab0b-180b-4866-ac76-bb7f07bb78fb",
+    "date": "07/22/2024",
+    "value": "$6400.37",
+    "description": "Vendor payment"
+  },
+  {
+    "id": "2be9003b-8435-4e58-9ed8-9cab4e27e660",
+    "date": "10-Mar-2025",
+    "value": "5,547",
+    "description": "Utility bill"
+  },
+  {
+    "id": "6e34ba86-e966-4ef9-a5e0-e400977273fc",
+    "date": "26-Sep-2024",
+    "value": "$2981.06",
+    "description": "Salary payment"
+  },
+  {
+    "id": "8f9ab9db-af2d-41fa-80c9-f89241009da9",
+    "date": "Apr 28, 2025",
+    "value": "$3447.27",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "e9c53a29-c613-4408-946b-8a41a7c76d77",
+    "date": "31-May-2025",
+    "value": "1,201",
+    "description": "Utility bill"
+  },
+  {
+    "id": "6c471f7d-5ae6-4270-bafc-fac70726a0b5",
+    "date": "23-Jan-2025",
+    "value": "$7144.11",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "1ada3d3f-d222-43dc-a05d-6a38ef0e205a",
+    "date": "08/28/2024",
+    "value": "4,680",
+    "description": "Client invoice"
+  },
+  {
+    "id": "aaf01f73-049b-4686-9324-230c5da19d25",
+    "date": "2024-10-30",
+    "value": "9,009",
+    "description": "Client invoice"
+  },
+  {
+    "id": "067ac333-d986-48ed-ada2-97ba7087f730",
+    "date": "Mar 08, 2025",
+    "value": "$3352.34",
+    "description": "Software license"
+  },
+  {
+    "id": "f4599492-1723-410a-b838-22383e94fa3c",
+    "date": "2025-04-12",
+    "value": "2,767",
+    "description": "Software license"
+  },
+  {
+    "id": "cc882686-6b4f-4489-854a-2dc484b89522",
+    "date": "Nov 27, 2024",
+    "value": "9,208",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "b5affc29-fdff-4a3c-bfac-5fedb74101c4",
+    "date": "Sep 01, 2024",
+    "value": "$8381.72",
+    "description": "Travel expense"
+  },
+  {
+    "id": "24d7df85-9dd0-4aba-96b8-4c1270d5d50c",
+    "date": "02/19/2025",
+    "value": "$814.80",
+    "description": "Consulting services"
+  },
+  {
+    "id": "b53aca69-01f5-40b4-a722-10a5741881cf",
+    "date": "07/18/2024",
+    "value": "$7473.14",
+    "description": "Salary payment"
+  },
+  {
+    "id": "262953a7-2439-49c6-971e-c448d738680a",
+    "date": "Nov 07, 2024",
+    "value": "$9111.33",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "ba6ea4a7-d1b9-4af0-aecd-1fa5b4744adc",
+    "date": "Mar 28, 2025",
+    "value": "5,792",
+    "description": "Office supplies"
+  },
+  {
+    "id": "3091e521-df30-4584-b0b5-fc17150d2770",
+    "date": "2024-11-22",
+    "value": "$8764.34",
+    "description": "Subscription fee"
+  },
+  {
+    "id": "2f32859a-5dc6-4f7e-8dba-72ace39f2e37",
+    "date": "10/11/2024",
+    "value": "$3681.54",
+    "description": "Consulting services"
+  },
+  {
+    "id": "05cba562-d4d1-4f78-976e-5a166ef64f03",
+    "date": "Feb 04, 2025",
+    "value": "$2524.66",
+    "description": "Consulting services"
+  },
+  {
+    "id": "31fdcbd3-1369-41dd-9a69-6b8c0ffcf6e5",
+    "date": "Dec 14, 2024",
+    "value": "3,503",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "1819e2b2-1165-40c6-9595-5088b800ed85",
+    "date": "Feb 14, 2025",
+    "value": "9,541",
+    "description": "Travel expense"
+  },
+  {
+    "id": "96523e82-c39a-434b-adc4-78c5f949113b",
+    "date": "11/23/2024",
+    "value": "$9216.49",
+    "description": "Utility bill"
+  },
+  {
+    "id": "4c2e03a6-9b7f-4722-8b88-6733e347533b",
+    "date": "Sep 16, 2024",
+    "value": "$2395.72",
+    "description": "Subscription fee"
+  },
+  {
+    "id": "1f36f19d-28e1-498c-92f7-af78270b01b1",
+    "date": "2024-06-18",
+    "value": "$6132.01",
+    "description": "Client invoice"
+  },
+  {
+    "id": "b0c9f2e7-d003-4c70-a2f5-567aa1abed91",
+    "date": "08/03/2024",
+    "value": "$2689.82",
+    "description": "Office supplies"
+  },
+  {
+    "id": "cfe5bdae-bf1f-44f8-b7b8-09393e4fa0bf",
+    "date": "30-Mar-2025",
+    "value": "$1606.59",
+    "description": "Software license"
+  },
+  {
+    "id": "92013826-702b-48eb-8b8e-20282736d50e",
+    "date": "2025-04-11",
+    "value": "1,564",
+    "description": "Subscription fee"
+  },
+  {
+    "id": "1e59843f-76f0-4ce0-9f00-8c16e1defe19",
+    "date": "27-Mar-2025",
+    "value": "$6815.19",
+    "description": "Travel expense"
+  },
+  {
+    "id": "5b8bd0c9-22e1-4998-9d23-1d8a0d67b93a",
+    "date": "Sep 27, 2024",
+    "value": "5,255",
+    "description": "Office supplies"
+  },
+  {
+    "id": "08e29f07-bf44-4ca8-ae2f-6592d307483b",
+    "date": "Apr 20, 2025",
+    "value": "63",
+    "description": "Office supplies"
+  },
+  {
+    "id": "ce94918b-4d65-465c-9fe6-06e335156638",
+    "date": "08/21/2024",
+    "value": "4,531",
+    "description": "Vendor payment"
+  },
+  {
+    "id": "3e872272-80e7-4b10-a503-e1e5d6372375",
+    "date": "Jan 05, 2025",
+    "value": "9,108",
+    "description": "Software license"
+  },
+  {
+    "id": "d9434896-effc-44ef-8317-b91764ab17b1",
+    "date": "03-Feb-2025",
+    "value": "2,564",
+    "description": "Software license"
+  },
+  {
+    "id": "42d562ff-1097-4ef9-9ca6-3f269ae6de48",
+    "date": "11/24/2024",
+    "value": "$6410.21",
+    "description": "Travel expense"
+  },
+  {
+    "id": "280ac926-8802-4bc9-ad1c-992c6e0ee149",
+    "date": "Jan 11, 2025",
+    "value": "$6068.74",
+    "description": "Consulting services"
+  },
+  {
+    "id": "e9a9bceb-d03a-4901-88d0-bc10167f679f",
+    "date": "Feb 28, 2025",
+    "value": "3,947",
+    "description": "Utility bill"
+  },
+  {
+    "id": "9b080c5d-e15b-402d-809f-920d4dd3015f",
+    "date": "17-May-2025",
+    "value": "412",
+    "description": "Office supplies"
+  },
+  {
+    "id": "7ae3cfad-f322-4cb0-bd77-9781d7892e94",
+    "date": "2025-04-28",
+    "value": "$3086.93",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "95f488f9-c965-4247-9f1e-5986ab678850",
+    "date": "Oct 09, 2024",
+    "value": "4,490",
+    "description": "Office supplies"
+  },
+  {
+    "id": "e1aed753-756e-47c9-8cee-334262824bc1",
+    "date": "2025-04-29",
+    "value": "7,367",
+    "description": "Consulting services"
+  },
+  {
+    "id": "d648737d-7d6b-4130-a5f0-6900e9a73397",
+    "date": "06-Apr-2025",
+    "value": "519",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "afb7ec5a-59f1-4f21-95bc-16372235677f",
+    "date": "23-Jan-2025",
+    "value": "$5208.20",
+    "description": "Utility bill"
+  },
+  {
+    "id": "42173bf4-5b72-4670-bb17-719a0a7b20d9",
+    "date": "17-Sep-2024",
+    "value": "$8092.79",
+    "description": "Travel expense"
+  },
+  {
+    "id": "d1639ae4-a2d1-475a-b9aa-d1f5a84b4ce6",
+    "date": "May 01, 2025",
+    "value": "457",
+    "description": "Office supplies"
+  },
+  {
+    "id": "7e33b0da-c2d9-416f-8461-f84065dda0d0",
+    "date": "09/18/2024",
+    "value": "$1913.40",
+    "description": "Salary payment"
+  },
+  {
+    "id": "75166524-a97b-490e-8964-d4938aab2858",
+    "date": "05/18/2025",
+    "value": "$5963.09",
+    "description": "Utility bill"
+  },
+  {
+    "id": "2a0c1312-04cb-42cf-8e10-71af48c7dd8f",
+    "date": "30-Jun-2024",
+    "value": "4,349",
+    "description": "Software license"
+  },
+  {
+    "id": "be947ac2-2ef2-48c7-b0a9-bddebc02bef9",
+    "date": "Jun 16, 2024",
+    "value": "3,189",
+    "description": "Consulting services"
+  },
+  {
+    "id": "4059f6b9-d7c9-4692-81e7-e18726452c59",
+    "date": "2025-03-25",
+    "value": "1,934",
+    "description": "Salary payment"
+  },
+  {
+    "id": "b634bf41-3a7e-4eb8-9ae9-93ae49589d65",
+    "date": "03/16/2025",
+    "value": "4,548",
+    "description": "Consulting services"
+  },
+  {
+    "id": "9a9518d6-8553-49de-a4fc-019ff1a29c0c",
+    "date": "2025-04-29",
+    "value": "$3473.44",
+    "description": "Software license"
+  },
+  {
+    "id": "9d2d03fa-bbc8-4666-b19f-fcffa9d81f29",
+    "date": "19-Jul-2024",
+    "value": "7,548",
+    "description": "Subscription fee"
+  },
+  {
+    "id": "38faee8a-e90b-448f-9bbb-7c5a8db1c59c",
+    "date": "Nov 18, 2024",
+    "value": "8,597",
+    "description": "Office supplies"
+  },
+  {
+    "id": "e4f3ece9-be09-4de6-a348-33efce12a507",
+    "date": "May 12, 2025",
+    "value": "$7431.21",
+    "description": "Salary payment"
+  },
+  {
+    "id": "db9d863d-89f1-46b8-ba0b-11ce6e5181e9",
+    "date": "13-Sep-2024",
+    "value": "$2657.78",
+    "description": "Office supplies"
+  },
+  {
+    "id": "990bcbde-9de8-4970-b17f-0f49158de266",
+    "date": "21-Apr-2025",
+    "value": "7,159",
+    "description": "Salary payment"
+  },
+  {
+    "id": "f700e06d-ec11-407f-a3a7-b30855d08702",
+    "date": "Apr 19, 2025",
+    "value": "$8650.78",
+    "description": "Software license"
+  },
+  {
+    "id": "c2b2f7cf-e6a6-4e80-9df5-89089293b491",
+    "date": "07-Dec-2024",
+    "value": "$4381.30",
+    "description": "Client invoice"
+  },
+  {
+    "id": "9cce0344-0693-4065-ad5a-1bf3e2dfdbbc",
+    "date": "Jan 05, 2025",
+    "value": "6,415",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "6749589f-2516-4f11-91fb-235e12f00400",
+    "date": "21-Jul-2024",
+    "value": "6,988",
+    "description": "Travel expense"
+  },
+  {
+    "id": "ea6a24e1-b22d-41e9-abfc-fb0a535cf500",
+    "date": "Dec 01, 2024",
+    "value": "$8250.94",
+    "description": "Office supplies"
+  },
+  {
+    "id": "7a460075-ae36-4c71-a1cf-5464b29abcdf",
+    "date": "2024-08-05",
+    "value": "9,809",
+    "description": "Travel expense"
+  },
+  {
+    "id": "a2b720f7-01d9-42e6-a8ed-1f2b6f15e703",
+    "date": "Oct 15, 2024",
+    "value": "6,161",
+    "description": "Client invoice"
+  },
+  {
+    "id": "469f2d91-486f-4d31-bbed-59474c33968b",
+    "date": "Jun 01, 2025",
+    "value": "2,933",
+    "description": "Subscription fee"
+  },
+  {
+    "id": "07435396-3601-4da0-8d89-3d85c7c07276",
+    "date": "2025-04-29",
+    "value": "$6938.73",
+    "description": "Utility bill"
+  },
+  {
+    "id": "a546971b-c173-4487-a211-700f6fbc6b03",
+    "date": "11-Sep-2024",
+    "value": "1,297",
+    "description": "Software license"
+  },
+  {
+    "id": "4ceb3042-1974-4d7c-a0bd-9d29eba244ce",
+    "date": "21-Nov-2024",
+    "value": "4,497",
+    "description": "Office supplies"
+  },
+  {
+    "id": "36fa4ebd-d3af-49a4-a89f-58e1f9c3ac96",
+    "date": "Apr 22, 2025",
+    "value": "$9257.83",
+    "description": "Software license"
+  },
+  {
+    "id": "3e99c09a-1ba1-44f9-a78c-df186da15df6",
+    "date": "07/04/2024",
+    "value": "$7347.97",
+    "description": "Office supplies"
+  },
+  {
+    "id": "d9a4b27c-0814-4b10-bcff-42ee7b1408a1",
+    "date": "10/24/2024",
+    "value": "$8464.68",
+    "description": "Software license"
+  },
+  {
+    "id": "6ad5e12b-5b32-4071-b299-c3f716466bf3",
+    "date": "Apr 15, 2025",
+    "value": "2,182",
+    "description": "Salary payment"
+  },
+  {
+    "id": "b1d56c42-2384-4f80-aeec-845238c6c01e",
+    "date": "2024-12-25",
+    "value": "1,460",
+    "description": "Hardware purchase"
+  },
+  {
+    "id": "0f89b731-07fb-4381-924f-4cf0a326a53c",
+    "date": "05-Feb-2025",
+    "value": "$40.70",
+    "description": "Subscription fee"
+  },
+  {
+    "id": "a3e5438b-4f4e-458e-8c5b-b9ae9091fd4a",
+    "date": "Mar 19, 2025",
+    "value": "302",
+    "description": "Vendor payment"
+  },
+  {
+    "id": "c39591af-6ef3-41b7-9c4a-4690bd69e240",
+    "date": "Jan 07, 2025",
+    "value": "648",
+    "description": "Software license"
+  },
+  {
+    "id": "d2d6281c-621e-4449-aeb1-c892fcdc48f3",
+    "date": "09/08/2024",
+    "value": "$278.88",
+    "description": "Utility bill"
+  },
+  {
+    "id": "418840fa-71ae-4782-99f1-3216c7c2e075",
+    "date": "May 06, 2025",
+    "value": "$107.48",
+    "description": "Office supplies"
+  },
+  {
+    "id": "2fbfb5f9-0f8b-443d-8e56-6ecddafa21cd",
+    "date": "2024-06-22",
+    "value": "7,951",
+    "description": "Subscription fee"
+  },
+  {
+    "id": "853ff4b9-3cea-43a2-bd88-e868cf39cedd",
+    "date": "2025-03-04",
+    "value": "$8839.72",
+    "description": "Salary payment"
+  },
+  {
+    "id": "153fd8d6-df17-48af-89a6-8e48576ad3a9",
+    "date": "02/08/2025",
+    "value": "3,935",
+    "description": "Client invoice"
+  },
+  {
+    "id": "b5486b24-e6f0-4a83-95a3-6fe931012b1c",
+    "date": "2024-09-21",
+    "value": "2,296",
+    "description": "Consulting services"
+  }
+]

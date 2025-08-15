@@ -1,0 +1,602 @@
+[
+  {
+    "id": "f42e6599-60c2-46f5-aa31-337af43bc42a",
+    "date": "2024-07-12",
+    "value": "$383.47",
+    "description": "TSLA"
+  },
+  {
+    "id": "5c9c8dc2-c0fd-4e64-8d57-8c75043bc696",
+    "date": "2024-07-15",
+    "value": "288",
+    "description": "TSLA"
+  },
+  {
+    "id": "15fdd5d6-04df-4101-a160-face4443f321",
+    "date": "2024-07-18",
+    "value": "255",
+    "description": "TSLA"
+  },
+  {
+    "id": "bf6644a6-2fa8-44a1-8757-0b869cf45bda",
+    "date": "2024-07-21",
+    "value": "919",
+    "description": "TSLA"
+  },
+  {
+    "id": "5a106c7e-3974-4009-a331-e8c21b4c465b",
+    "date": "2024-07-24",
+    "value": "154",
+    "description": "TSLA"
+  },
+  {
+    "id": "9d96adf5-f97f-4d3e-a0eb-26a7addaa144",
+    "date": "2024-07-27",
+    "value": "171",
+    "description": "TSLA"
+  },
+  {
+    "id": "6c7b7f52-7d42-4317-a3f5-6709cf51f7ed",
+    "date": "2024-07-30",
+    "value": "659",
+    "description": "TSLA"
+  },
+  {
+    "id": "74a71432-a698-4ebc-8ddb-e536af7942e1",
+    "date": "2024-08-02",
+    "value": "$569.68",
+    "description": "TSLA"
+  },
+  {
+    "id": "041ad63f-97aa-40f6-a348-5df63f079ed2",
+    "date": "2024-08-05",
+    "value": "405",
+    "description": "TSLA"
+  },
+  {
+    "id": "43f86619-1f1d-48b5-8fea-5cc7ffb094e4",
+    "date": "2024-08-08",
+    "value": "$170.19",
+    "description": "TSLA"
+  },
+  {
+    "id": "8dcd36fd-526a-40f9-9c7a-478fcfb43588",
+    "date": "2024-08-11",
+    "value": "$357.63",
+    "description": "TSLA"
+  },
+  {
+    "id": "2687af40-74b9-4a5d-a732-fce0239fe58e",
+    "date": "2024-08-14",
+    "value": "$881.90",
+    "description": "TSLA"
+  },
+  {
+    "id": "992516ba-2d6c-4917-97de-ca138876652c",
+    "date": "2024-08-17",
+    "value": "1,102",
+    "description": "TSLA"
+  },
+  {
+    "id": "8afc831c-64c5-46ff-acea-d2b998dcf0dc",
+    "date": "2024-08-20",
+    "value": "568",
+    "description": "TSLA"
+  },
+  {
+    "id": "7d4dbf8c-ae5f-44ac-af8b-3680f10f77ad",
+    "date": "2024-08-23",
+    "value": "$933.04",
+    "description": "TSLA"
+  },
+  {
+    "id": "109dddaa-bd93-4b9a-beb1-d08b82646917",
+    "date": "2024-08-26",
+    "value": "735",
+    "description": "TSLA"
+  },
+  {
+    "id": "83cb8105-71de-403f-bdaf-36262bdb3740",
+    "date": "2024-08-29",
+    "value": "$963.68",
+    "description": "TSLA"
+  },
+  {
+    "id": "b5e4864b-2eef-4de9-9a77-18556c573b8f",
+    "date": "2024-09-01",
+    "value": "$943.19",
+    "description": "TSLA"
+  },
+  {
+    "id": "258ada40-d1ed-4561-97d3-87d8321e2b32",
+    "date": "2024-09-04",
+    "value": "$480.02",
+    "description": "TSLA"
+  },
+  {
+    "id": "ab8e35a7-b493-4d65-aa4b-baa667820192",
+    "date": "2024-09-07",
+    "value": "312",
+    "description": "TSLA"
+  },
+  {
+    "id": "dafc6190-9553-4b54-b081-024f9282ea40",
+    "date": "2024-09-10",
+    "value": "$960.06",
+    "description": "TSLA"
+  },
+  {
+    "id": "61c90209-d90f-4231-a793-3f0c5be5e7bd",
+    "date": "2024-09-13",
+    "value": "137",
+    "description": "TSLA"
+  },
+  {
+    "id": "33f310c6-16bb-4252-88bf-42af1ae206d6",
+    "date": "2024-09-16",
+    "value": "$1158.59",
+    "description": "TSLA"
+  },
+  {
+    "id": "26ef078d-4087-420a-a62b-e7cf154a4af3",
+    "date": "2024-09-19",
+    "value": "371",
+    "description": "TSLA"
+  },
+  {
+    "id": "6d5240a9-1120-4b1b-aebc-cd3b01238132",
+    "date": "2024-09-22",
+    "value": "$139.57",
+    "description": "TSLA"
+  },
+  {
+    "id": "38fa2d9c-dd0c-43c9-b5af-2bdfbd680013",
+    "date": "2024-09-25",
+    "value": "$364.26",
+    "description": "TSLA"
+  },
+  {
+    "id": "d84efa5e-3ace-4e64-b912-c73282e70fee",
+    "date": "2024-09-28",
+    "value": "404",
+    "description": "TSLA"
+  },
+  {
+    "id": "8f967d6b-46bd-4e4e-b68b-445d36278c08",
+    "date": "2024-10-01",
+    "value": "318",
+    "description": "TSLA"
+  },
+  {
+    "id": "9a3196dc-d0b5-461d-a098-41bb5c325d26",
+    "date": "2024-10-04",
+    "value": "$882.84",
+    "description": "TSLA"
+  },
+  {
+    "id": "f5b6046b-c610-43d6-9a29-ed12b23023ff",
+    "date": "2024-10-07",
+    "value": "970",
+    "description": "TSLA"
+  },
+  {
+    "id": "68321d4c-68ea-4101-8c28-71d407124301",
+    "date": "2024-10-10",
+    "value": "$342.95",
+    "description": "TSLA"
+  },
+  {
+    "id": "b8fb85d8-bb06-4510-bf2e-f80bab1f064c",
+    "date": "2024-10-13",
+    "value": "$770.26",
+    "description": "TSLA"
+  },
+  {
+    "id": "0cd58661-dc71-4d0c-a3e1-0f43ed98dba6",
+    "date": "2024-10-16",
+    "value": "$87.40",
+    "description": "TSLA"
+  },
+  {
+    "id": "2fbec472-a356-40c4-b022-a9e4faf7b8d5",
+    "date": "2024-10-19",
+    "value": "557",
+    "description": "TSLA"
+  },
+  {
+    "id": "799df34c-7dae-4c6f-a257-94035d783967",
+    "date": "2024-10-22",
+    "value": "299",
+    "description": "TSLA"
+  },
+  {
+    "id": "c84e3378-3932-442c-965a-d5f3ee7d2a92",
+    "date": "2024-10-25",
+    "value": "1,065",
+    "description": "TSLA"
+  },
+  {
+    "id": "2fd18fbc-97a1-4e3b-8b0b-b904c84d2610",
+    "date": "2024-10-28",
+    "value": "$270.29",
+    "description": "TSLA"
+  },
+  {
+    "id": "d166c97e-37ed-4386-bee5-cd3856da21c1",
+    "date": "2024-10-31",
+    "value": "$265.27",
+    "description": "TSLA"
+  },
+  {
+    "id": "36da3b0c-71e4-4ebb-ad51-2ed0b300964c",
+    "date": "2024-11-03",
+    "value": "1,040",
+    "description": "TSLA"
+  },
+  {
+    "id": "37a77567-a525-4d0b-89d8-33e1b7ea002d",
+    "date": "2024-11-06",
+    "value": "105",
+    "description": "TSLA"
+  },
+  {
+    "id": "be55f542-dace-47e7-85cd-2b63b92f2c89",
+    "date": "2024-11-09",
+    "value": "$141.25",
+    "description": "TSLA"
+  },
+  {
+    "id": "09f381c6-78fa-4388-9d24-e6bbbe9329fa",
+    "date": "2024-11-12",
+    "value": "550",
+    "description": "TSLA"
+  },
+  {
+    "id": "42bbfc28-d3e6-483c-a5d1-42d5b2c9c225",
+    "date": "2024-11-15",
+    "value": "1,130",
+    "description": "TSLA"
+  },
+  {
+    "id": "3ebb3bac-2cff-4b73-adcd-45ccc06e558a",
+    "date": "2024-11-18",
+    "value": "$524.46",
+    "description": "TSLA"
+  },
+  {
+    "id": "a307c0d0-cb2d-439c-8e0a-532dd3a695d0",
+    "date": "2024-11-21",
+    "value": "$97.89",
+    "description": "TSLA"
+  },
+  {
+    "id": "0a5142f3-f7a1-4955-ab5a-97cf2585b606",
+    "date": "2024-11-24",
+    "value": "$924.87",
+    "description": "TSLA"
+  },
+  {
+    "id": "3238b2ad-957f-4d1e-9dac-b82e70e3a68f",
+    "date": "2024-11-27",
+    "value": "$1322.94",
+    "description": "TSLA"
+  },
+  {
+    "id": "252b4618-87c6-4d6b-98f9-193fe01af02f",
+    "date": "2024-11-30",
+    "value": "$792.10",
+    "description": "TSLA"
+  },
+  {
+    "id": "ef3c69e8-bddb-44ba-a5f4-36fb5f532587",
+    "date": "2024-12-03",
+    "value": "38",
+    "description": "TSLA"
+  },
+  {
+    "id": "49a51aa3-b59c-4b25-8b25-b827fa146a26",
+    "date": "2024-12-06",
+    "value": "$316.20",
+    "description": "TSLA"
+  },
+  {
+    "id": "f06453bd-207b-4aa7-9a65-8107e7aaa75b",
+    "date": "2024-12-09",
+    "value": "$877.95",
+    "description": "TSLA"
+  },
+  {
+    "id": "ae44383a-d3a7-4073-a978-72fe2980301c",
+    "date": "2024-12-12",
+    "value": "$518.62",
+    "description": "TSLA"
+  },
+  {
+    "id": "a7218556-00ac-412c-8389-2bde88b7a46f",
+    "date": "2024-12-15",
+    "value": "162",
+    "description": "TSLA"
+  },
+  {
+    "id": "e428e28d-19c5-483c-8d98-2fa856c10a53",
+    "date": "2024-12-18",
+    "value": "$1270.90",
+    "description": "TSLA"
+  },
+  {
+    "id": "32429e3b-caa2-4461-93a7-7cc331bc3c83",
+    "date": "2024-12-21",
+    "value": "484",
+    "description": "TSLA"
+  },
+  {
+    "id": "3b6886cf-6fa1-41f4-8e88-7fb0a4685d57",
+    "date": "2024-12-24",
+    "value": "$297.61",
+    "description": "TSLA"
+  },
+  {
+    "id": "62fa886c-efe3-4197-a537-baa87c16328a",
+    "date": "2024-12-27",
+    "value": "$627.08",
+    "description": "TSLA"
+  },
+  {
+    "id": "050e6183-4cf7-41d9-a911-81b6df32c695",
+    "date": "2024-12-30",
+    "value": "561",
+    "description": "TSLA"
+  },
+  {
+    "id": "2479aecc-8777-4a4d-a7e4-531ac52fd790",
+    "date": "2025-01-02",
+    "value": "951",
+    "description": "TSLA"
+  },
+  {
+    "id": "4e0a6832-4e8b-42f3-a530-591b2d205614",
+    "date": "2025-01-05",
+    "value": "234",
+    "description": "TSLA"
+  },
+  {
+    "id": "946d3c07-dce7-40dc-b649-6df2221a65dd",
+    "date": "2025-01-08",
+    "value": "$889.56",
+    "description": "TSLA"
+  },
+  {
+    "id": "95350ff4-78fe-45d3-a1b0-fe4725b88238",
+    "date": "2025-01-11",
+    "value": "361",
+    "description": "TSLA"
+  },
+  {
+    "id": "e70aa1a0-94b3-40f3-8a69-f22cbcb33826",
+    "date": "2025-01-14",
+    "value": "$748.80",
+    "description": "TSLA"
+  },
+  {
+    "id": "d1e18413-70b8-4ae3-a0c9-e7e5fbd3ff84",
+    "date": "2025-01-17",
+    "value": "$1115.66",
+    "description": "TSLA"
+  },
+  {
+    "id": "3d4e6dbc-fe01-49da-9fb5-fb2d8d489094",
+    "date": "2025-01-20",
+    "value": "$545.18",
+    "description": "TSLA"
+  },
+  {
+    "id": "4026a6ec-ad5f-48f7-b6be-a0df6a4a610e",
+    "date": "2025-01-23",
+    "value": "1,039",
+    "description": "TSLA"
+  },
+  {
+    "id": "7d71e2af-c73e-48dc-bae5-fa231c2a60a3",
+    "date": "2025-01-26",
+    "value": "$385.84",
+    "description": "TSLA"
+  },
+  {
+    "id": "da53221b-aaf1-4c25-a9de-b1087d9aa036",
+    "date": "2025-01-29",
+    "value": "$410.27",
+    "description": "TSLA"
+  },
+  {
+    "id": "0a720335-ca1f-4b44-af83-fa0efbbac16b",
+    "date": "2025-02-01",
+    "value": "204",
+    "description": "TSLA"
+  },
+  {
+    "id": "f13777c3-612b-4d8a-aeb0-255d8bdf17ec",
+    "date": "2025-02-04",
+    "value": "$1175.65",
+    "description": "TSLA"
+  },
+  {
+    "id": "c2ed32dc-d306-4b9e-a086-b777f04658eb",
+    "date": "2025-02-07",
+    "value": "$75.40",
+    "description": "TSLA"
+  },
+  {
+    "id": "bf1cefb4-d504-480e-a725-f53d4830fe5a",
+    "date": "2025-02-10",
+    "value": "238",
+    "description": "TSLA"
+  },
+  {
+    "id": "8e8edef2-4a89-4a96-89a7-05661e42f64f",
+    "date": "2025-02-13",
+    "value": "664",
+    "description": "TSLA"
+  },
+  {
+    "id": "bc6b0c00-2a97-4fc6-af74-304403abd844",
+    "date": "2025-02-16",
+    "value": "$245.45",
+    "description": "TSLA"
+  },
+  {
+    "id": "3de90b69-3556-4f27-81fe-4c1a357aaa24",
+    "date": "2025-02-19",
+    "value": "748",
+    "description": "TSLA"
+  },
+  {
+    "id": "e12d0323-65e3-44f7-97fc-cca9d50ef175",
+    "date": "2025-02-22",
+    "value": "55",
+    "description": "TSLA"
+  },
+  {
+    "id": "5d14ed54-b749-4ba3-830d-239be21d98b5",
+    "date": "2025-02-25",
+    "value": "$657.35",
+    "description": "TSLA"
+  },
+  {
+    "id": "07bb9cea-2599-4997-a47c-4d93d4b9fdfe",
+    "date": "2025-02-28",
+    "value": "254",
+    "description": "TSLA"
+  },
+  {
+    "id": "3e6cec0a-8676-4ba7-8287-2e9135b6b693",
+    "date": "2025-03-03",
+    "value": "1,058",
+    "description": "TSLA"
+  },
+  {
+    "id": "0255e99a-e2ff-4337-a499-62a9c35d1770",
+    "date": "2025-03-06",
+    "value": "446",
+    "description": "TSLA"
+  },
+  {
+    "id": "2c1cefde-49b3-46d6-b10b-f3c9e0d0c067",
+    "date": "2025-03-09",
+    "value": "179",
+    "description": "TSLA"
+  },
+  {
+    "id": "fd08781e-c203-4a40-891b-cbef863d136a",
+    "date": "2025-03-12",
+    "value": "$384.53",
+    "description": "TSLA"
+  },
+  {
+    "id": "bfdd9156-ea10-4aed-b05f-5a80499eb52e",
+    "date": "2025-03-15",
+    "value": "$370.67",
+    "description": "TSLA"
+  },
+  {
+    "id": "d238aeb1-79b1-44a5-8778-cf9a02489fa4",
+    "date": "2025-03-18",
+    "value": "1,256",
+    "description": "TSLA"
+  },
+  {
+    "id": "63c4de18-e9b0-4f15-802a-97f9ca2947f8",
+    "date": "2025-03-21",
+    "value": "$35.19",
+    "description": "TSLA"
+  },
+  {
+    "id": "4e353510-a2df-42ee-a3a3-22e40d8d9058",
+    "date": "2025-03-24",
+    "value": "$498.73",
+    "description": "TSLA"
+  },
+  {
+    "id": "c5e896dc-8622-4bfa-9a07-8ca585c530e4",
+    "date": "2025-03-27",
+    "value": "$1169.11",
+    "description": "TSLA"
+  },
+  {
+    "id": "bdec9daa-934e-4ec3-9ef2-fcacfa89aa04",
+    "date": "2025-03-30",
+    "value": "111",
+    "description": "TSLA"
+  },
+  {
+    "id": "a38d744f-d840-4e3e-9404-aabfc55ccb55",
+    "date": "2025-04-02",
+    "value": "$120.52",
+    "description": "TSLA"
+  },
+  {
+    "id": "02dd4775-1a93-4e8b-934e-cfe214a4defc",
+    "date": "2025-04-05",
+    "value": "349",
+    "description": "TSLA"
+  },
+  {
+    "id": "4c2e376d-8a66-4d8b-9aea-157a592730f3",
+    "date": "2025-04-08",
+    "value": "1,022",
+    "description": "TSLA"
+  },
+  {
+    "id": "b2e498cc-c48c-40e7-bab0-4adecfc3b688",
+    "date": "2025-04-11",
+    "value": "866",
+    "description": "TSLA"
+  },
+  {
+    "id": "5ea86b4f-07f1-4966-834e-bf231c929d96",
+    "date": "2025-04-14",
+    "value": "$1135.56",
+    "description": "TSLA"
+  },
+  {
+    "id": "4c5b2432-26d5-43ff-981f-2a77d2018cd2",
+    "date": "2025-04-17",
+    "value": "405",
+    "description": "TSLA"
+  },
+  {
+    "id": "6d199236-2c09-4142-bad3-3177a112effd",
+    "date": "2025-04-20",
+    "value": "235",
+    "description": "TSLA"
+  },
+  {
+    "id": "022eaa68-24cc-4a44-989b-d3f154d90c41",
+    "date": "2025-04-23",
+    "value": "395",
+    "description": "TSLA"
+  },
+  {
+    "id": "1e881b25-dade-4d06-9559-bc8b06e3d94b",
+    "date": "2025-04-26",
+    "value": "$444.97",
+    "description": "TSLA"
+  },
+  {
+    "id": "79fbfe36-5b42-493c-b4a9-c55b57157158",
+    "date": "2025-04-29",
+    "value": "95",
+    "description": "TSLA"
+  },
+  {
+    "id": "dcbbf25a-c1e2-42b1-af28-4db10964643d",
+    "date": "2025-05-02",
+    "value": "$747.53",
+    "description": "TSLA"
+  },
+  {
+    "id": "b4788054-c6f7-48d2-8947-b59afd24f0e3",
+    "date": "2025-05-05",
+    "value": "873",
+    "description": "TSLA"
+  }
+]

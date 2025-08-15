@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Financial Adventure</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="about-page">
+        <div class="container">
+            <div class="about-header">
+                <h1 class="about-title">Financial Quest</h1>
+                <p class="about-subtitle">
+                    Welcome to your personal financial learning adventure! This gamified platform
+                    transforms complex financial data into an engaging, interactive experience designed to
+                    make learning about finance fun and accessible.
+                </p>
+                <div class="header-action">
+                    <a href="#" class="btn-outline">
+                        <i class="fas fa-rocket"></i> Learn • Explore • Achieve • Level Up!
+                    </a>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon explore">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="feature-title">Explore Companies</h3>
+                    <p class="feature-description">
+                        Discover different companies and their financial stories
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon charts">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Interactive Charts</h3>
+                    <p class="feature-description">
+                        Visualize financial data with beautiful, easy-to-understand charts
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon insights">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="feature-title">Gain Insights</h3>
+                    <p class="feature-description">
+                        Learn valuable financial concepts through guided exploration
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon achievements">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="feature-title">Unlock Achievements</h3>
+                    <p class="feature-description">
+                        Level up and earn rewards as you progress through your journey
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-section">
+                <h2 class="experience-title">What You'll Experience</h2>
+                <div class="experience-grid">
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3 class="experience-name">Gamified Learning</h3>
+                        <p class="experience-description">
+                            Earn XP, unlock achievements, and level up as you explore
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="experience-name">Visual Data</h3>
+                        <p class="experience-description">
+                            Beautiful charts and graphs make complex data simple
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="experience-name">Smart Insights</h3>
+                        <p class="experience-description">
+                            Get explanations and context for everything you see
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-cta">
+                <p>Ready to start your financial adventure?</p>
+                <a href="/dashboard" class="quest-button">
+                    Let's Begin the Quest <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- About Page JavaScript -->
+    <script src="{{ url_for('static', filename='js/about.js') }}"></script>
+</body>
+</html>

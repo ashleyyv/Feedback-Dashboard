@@ -1,0 +1,602 @@
+[
+  {
+    "id": "169dbee9-5e11-4754-a601-fa4920a8e90b",
+    "date": "2024-07-01",
+    "value": "$61145.68",
+    "description": "GOOGL"
+  },
+  {
+    "id": "f386f96a-e39f-4757-b9eb-3598c6302c44",
+    "date": "2024-07-04",
+    "value": "1,559,038",
+    "description": "GOOGL"
+  },
+  {
+    "id": "d7c32edf-90c7-4b7e-933a-1d00a61b6898",
+    "date": "2024-07-07",
+    "value": "689,122",
+    "description": "GOOGL"
+  },
+  {
+    "id": "5677c0d6-1bec-4573-b88f-357e8859fd06",
+    "date": "2024-07-10",
+    "value": "303,694",
+    "description": "GOOGL"
+  },
+  {
+    "id": "9530619c-6189-4b05-8249-9a77f76025b8",
+    "date": "2024-07-13",
+    "value": "318,914",
+    "description": "GOOGL"
+  },
+  {
+    "id": "91f00c69-a764-4aeb-b5e1-20a319fa3e26",
+    "date": "2024-07-16",
+    "value": "$1975740.12",
+    "description": "GOOGL"
+  },
+  {
+    "id": "e9821f54-94b3-4571-a2ac-194cad29f370",
+    "date": "2024-07-19",
+    "value": "$1074356.62",
+    "description": "GOOGL"
+  },
+  {
+    "id": "698a0a30-5f0f-4b56-9011-b8f046fc2241",
+    "date": "2024-07-22",
+    "value": "1,803,586",
+    "description": "GOOGL"
+  },
+  {
+    "id": "c2e0a097-9c94-43df-b970-3844b081d0b3",
+    "date": "2024-07-25",
+    "value": "1,019,759",
+    "description": "GOOGL"
+  },
+  {
+    "id": "061bd1ae-7250-4c09-9a4f-22c59d7a6085",
+    "date": "2024-07-28",
+    "value": "$242609.89",
+    "description": "GOOGL"
+  },
+  {
+    "id": "ebb2e40a-79fd-4f23-bd93-69568d0ddc7f",
+    "date": "2024-07-31",
+    "value": "$656143.42",
+    "description": "GOOGL"
+  },
+  {
+    "id": "b3a4c6c0-97c9-473d-a9f9-a079a1978544",
+    "date": "2024-08-03",
+    "value": "$172162.43",
+    "description": "GOOGL"
+  },
+  {
+    "id": "620082a4-a681-4e66-bf68-10340a5dc09b",
+    "date": "2024-08-06",
+    "value": "1,777,043",
+    "description": "GOOGL"
+  },
+  {
+    "id": "cd9f4891-79a5-408e-930a-0f03be0f22ed",
+    "date": "2024-08-09",
+    "value": "$824479.52",
+    "description": "GOOGL"
+  },
+  {
+    "id": "74c46323-6ccd-4974-9f1a-6c566052f477",
+    "date": "2024-08-12",
+    "value": "$1107928.26",
+    "description": "GOOGL"
+  },
+  {
+    "id": "5bbda264-0a38-4f0c-8487-5f01b42e5f96",
+    "date": "2024-08-15",
+    "value": "$244655.77",
+    "description": "GOOGL"
+  },
+  {
+    "id": "023bdd88-e027-4133-ae55-8d8fa4e0f3b5",
+    "date": "2024-08-18",
+    "value": "$1836920.67",
+    "description": "GOOGL"
+  },
+  {
+    "id": "bc3fec13-add8-4bba-9da0-31fb9146d8cf",
+    "date": "2024-08-21",
+    "value": "735,618",
+    "description": "GOOGL"
+  },
+  {
+    "id": "3c5bd677-8e1e-4d47-bad5-a272563cc1a1",
+    "date": "2024-08-24",
+    "value": "$932741.82",
+    "description": "GOOGL"
+  },
+  {
+    "id": "62d1c8f3-69bd-4dd4-b32c-5df9899e8ae4",
+    "date": "2024-08-27",
+    "value": "$467429.68",
+    "description": "GOOGL"
+  },
+  {
+    "id": "80eceeba-ac76-4504-8b4b-d749d15ce486",
+    "date": "2024-08-30",
+    "value": "559,276",
+    "description": "GOOGL"
+  },
+  {
+    "id": "18666259-69ec-4964-970a-eb9c3cf69ecc",
+    "date": "2024-09-02",
+    "value": "747,161",
+    "description": "GOOGL"
+  },
+  {
+    "id": "1760e7f4-bf57-486b-99b5-65beead10d22",
+    "date": "2024-09-05",
+    "value": "1,133,688",
+    "description": "GOOGL"
+  },
+  {
+    "id": "e92b084a-371c-4367-94a8-e3bb34346917",
+    "date": "2024-09-08",
+    "value": "$809008.51",
+    "description": "GOOGL"
+  },
+  {
+    "id": "51ee964c-86e9-449a-a90d-233885ec51e9",
+    "date": "2024-09-11",
+    "value": "$1484525.95",
+    "description": "GOOGL"
+  },
+  {
+    "id": "b726855e-e39a-4d6f-943c-1ed97b65c4f4",
+    "date": "2024-09-14",
+    "value": "$524957.16",
+    "description": "GOOGL"
+  },
+  {
+    "id": "fde922de-12cc-4509-9512-351b5792afab",
+    "date": "2024-09-17",
+    "value": "$465796.09",
+    "description": "GOOGL"
+  },
+  {
+    "id": "0bf76bda-3cdf-4f8e-a23b-f0c011ecdec3",
+    "date": "2024-09-20",
+    "value": "$96858.32",
+    "description": "GOOGL"
+  },
+  {
+    "id": "24b35c86-5953-4107-9a17-8010a6012f34",
+    "date": "2024-09-23",
+    "value": "908,150",
+    "description": "GOOGL"
+  },
+  {
+    "id": "d329289e-b918-4b0c-9f1a-f210b9d21e4f",
+    "date": "2024-09-26",
+    "value": "264,806",
+    "description": "GOOGL"
+  },
+  {
+    "id": "5b0d0c6d-081c-476c-a180-6141bcd0d3e9",
+    "date": "2024-09-29",
+    "value": "$824511.27",
+    "description": "GOOGL"
+  },
+  {
+    "id": "bc2cf874-4635-4cba-b13e-0b43d637bd97",
+    "date": "2024-10-02",
+    "value": "975,648",
+    "description": "GOOGL"
+  },
+  {
+    "id": "cf0e7342-981f-4dfb-a879-6b1f318d892d",
+    "date": "2024-10-05",
+    "value": "$685031.86",
+    "description": "GOOGL"
+  },
+  {
+    "id": "12d5ca84-19fb-453c-bece-7ed56fed434f",
+    "date": "2024-10-08",
+    "value": "1,299,619",
+    "description": "GOOGL"
+  },
+  {
+    "id": "ac51761b-65ab-4565-9163-395ddfadff2d",
+    "date": "2024-10-11",
+    "value": "$1887946.79",
+    "description": "GOOGL"
+  },
+  {
+    "id": "ae8ee61a-e4b1-44f2-926b-344ce82fee44",
+    "date": "2024-10-14",
+    "value": "1,876,825",
+    "description": "GOOGL"
+  },
+  {
+    "id": "7dd6bd0a-6210-4ed1-9c42-a89a1cb6fc4e",
+    "date": "2024-10-17",
+    "value": "$285377.97",
+    "description": "GOOGL"
+  },
+  {
+    "id": "b0746e51-c2d3-45be-9f96-3d0f1aa76d4a",
+    "date": "2024-10-20",
+    "value": "1,498,316",
+    "description": "GOOGL"
+  },
+  {
+    "id": "f33ab7ea-4e95-4035-99ff-884630604a40",
+    "date": "2024-10-23",
+    "value": "1,435,452",
+    "description": "GOOGL"
+  },
+  {
+    "id": "667ed646-c5d3-444b-b637-fe1c6c8b73d6",
+    "date": "2024-10-26",
+    "value": "$228061.41",
+    "description": "GOOGL"
+  },
+  {
+    "id": "430717a8-1f77-4cb5-8116-2b0a156210f8",
+    "date": "2024-10-29",
+    "value": "2,006,912",
+    "description": "GOOGL"
+  },
+  {
+    "id": "3c2586c5-f562-43b6-a1ca-1dc52ba9a181",
+    "date": "2024-11-01",
+    "value": "$1187596.07",
+    "description": "GOOGL"
+  },
+  {
+    "id": "fe36aff7-8aef-4e85-93fc-3dc4623bb3a5",
+    "date": "2024-11-04",
+    "value": "1,389,949",
+    "description": "GOOGL"
+  },
+  {
+    "id": "823e6df3-b699-4657-b73c-59de488dd21e",
+    "date": "2024-11-07",
+    "value": "715,231",
+    "description": "GOOGL"
+  },
+  {
+    "id": "68c222fd-f5d7-498a-a182-8a2577b6bdd2",
+    "date": "2024-11-10",
+    "value": "1,721,795",
+    "description": "GOOGL"
+  },
+  {
+    "id": "9f892f7e-6de8-4a5f-bea1-4ed515924149",
+    "date": "2024-11-13",
+    "value": "505,794",
+    "description": "GOOGL"
+  },
+  {
+    "id": "53d6da14-81f7-42e6-afe3-522dca1823b9",
+    "date": "2024-11-16",
+    "value": "1,360,277",
+    "description": "GOOGL"
+  },
+  {
+    "id": "13222cb1-9230-4561-bbf0-8bced612e122",
+    "date": "2024-11-19",
+    "value": "708,636",
+    "description": "GOOGL"
+  },
+  {
+    "id": "db8a3331-28db-4e11-bebd-5245e3473d22",
+    "date": "2024-11-22",
+    "value": "$547884.15",
+    "description": "GOOGL"
+  },
+  {
+    "id": "ef681432-cd78-46af-8878-3da997e57166",
+    "date": "2024-11-25",
+    "value": "1,676,609",
+    "description": "GOOGL"
+  },
+  {
+    "id": "aa1b9843-ea09-4a09-af5a-d8237e844a0e",
+    "date": "2024-11-28",
+    "value": "1,943,004",
+    "description": "GOOGL"
+  },
+  {
+    "id": "0d197763-ddc2-4864-a93a-1747ae49984a",
+    "date": "2024-12-01",
+    "value": "$970830.29",
+    "description": "GOOGL"
+  },
+  {
+    "id": "d636ddd8-7978-46d0-bd7a-60d2aa6374b2",
+    "date": "2024-12-04",
+    "value": "553,266",
+    "description": "GOOGL"
+  },
+  {
+    "id": "38c96180-fad5-4425-8e61-f6ba159081f6",
+    "date": "2024-12-07",
+    "value": "$2039700.38",
+    "description": "GOOGL"
+  },
+  {
+    "id": "950a19f0-7ad2-4bd9-ae71-4b3b48d57fbd",
+    "date": "2024-12-10",
+    "value": "$1779363.20",
+    "description": "GOOGL"
+  },
+  {
+    "id": "cdeef1fb-aeb7-48ca-a385-3d8b29f08277",
+    "date": "2024-12-13",
+    "value": "1,293,635",
+    "description": "GOOGL"
+  },
+  {
+    "id": "ce00d671-b4bd-4c74-b77b-d976f21e72f6",
+    "date": "2024-12-16",
+    "value": "2,433,171",
+    "description": "GOOGL"
+  },
+  {
+    "id": "ab32a061-6baf-4ee2-b847-3a5d5e1627bb",
+    "date": "2024-12-19",
+    "value": "$2361477.46",
+    "description": "GOOGL"
+  },
+  {
+    "id": "488e79ff-0bd1-48cd-b0d8-b4873c0ba70c",
+    "date": "2024-12-22",
+    "value": "1,483,237",
+    "description": "GOOGL"
+  },
+  {
+    "id": "993c096c-28d6-44f0-911f-527a8407fb78",
+    "date": "2024-12-25",
+    "value": "$653382.21",
+    "description": "GOOGL"
+  },
+  {
+    "id": "287369f4-08e8-42d5-ac27-67d07ede8b61",
+    "date": "2024-12-28",
+    "value": "$1815078.00",
+    "description": "GOOGL"
+  },
+  {
+    "id": "fbcc7e4b-4afa-42fa-9a3c-b0ebe3c899c5",
+    "date": "2024-12-31",
+    "value": "$109773.06",
+    "description": "GOOGL"
+  },
+  {
+    "id": "4c3066c0-689d-4563-b893-cd802b30c44d",
+    "date": "2025-01-03",
+    "value": "933,307",
+    "description": "GOOGL"
+  },
+  {
+    "id": "80f79c42-6c65-4122-b391-73dd4b16cd53",
+    "date": "2025-01-06",
+    "value": "2,201,974",
+    "description": "GOOGL"
+  },
+  {
+    "id": "e103ef90-d0d5-4492-bf84-c05bd497cdb5",
+    "date": "2025-01-09",
+    "value": "809,135",
+    "description": "GOOGL"
+  },
+  {
+    "id": "86f34f66-c69b-45de-afec-dd49ccf90146",
+    "date": "2025-01-12",
+    "value": "$2204243.09",
+    "description": "GOOGL"
+  },
+  {
+    "id": "cf58f73b-dc90-4b5f-b20f-1bb716da05fc",
+    "date": "2025-01-15",
+    "value": "$491858.79",
+    "description": "GOOGL"
+  },
+  {
+    "id": "7fefab0e-5c37-455b-bef0-94a56575d829",
+    "date": "2025-01-18",
+    "value": "$370391.66",
+    "description": "GOOGL"
+  },
+  {
+    "id": "53dcdd5a-e8d7-4849-8425-b34016c8dfda",
+    "date": "2025-01-21",
+    "value": "$1104016.09",
+    "description": "GOOGL"
+  },
+  {
+    "id": "3205b132-0bd1-4aa3-84f2-81a5a6686d66",
+    "date": "2025-01-24",
+    "value": "2,449,243",
+    "description": "GOOGL"
+  },
+  {
+    "id": "4abc8e93-b25a-4cdb-894b-dac3559ab39d",
+    "date": "2025-01-27",
+    "value": "$2269281.35",
+    "description": "GOOGL"
+  },
+  {
+    "id": "d09f1636-6e4f-40a5-b783-6b8de6e4e0ac",
+    "date": "2025-01-30",
+    "value": "$896926.47",
+    "description": "GOOGL"
+  },
+  {
+    "id": "d9c4e816-fcd4-4786-91ab-3aebcc1898c7",
+    "date": "2025-02-02",
+    "value": "$678892.92",
+    "description": "GOOGL"
+  },
+  {
+    "id": "c0379c00-3afe-43cd-a5ad-44b1e016a57b",
+    "date": "2025-02-05",
+    "value": "149,058",
+    "description": "GOOGL"
+  },
+  {
+    "id": "50304590-ea4e-457a-b2e1-6345410cb250",
+    "date": "2025-02-08",
+    "value": "$2232597.80",
+    "description": "GOOGL"
+  },
+  {
+    "id": "da65da50-7de2-4f11-8996-0114f29614a1",
+    "date": "2025-02-11",
+    "value": "261,027",
+    "description": "GOOGL"
+  },
+  {
+    "id": "ed0e4e38-84a9-4853-bbe6-a2b7dac21c48",
+    "date": "2025-02-14",
+    "value": "$539334.65",
+    "description": "GOOGL"
+  },
+  {
+    "id": "93417f34-c27a-4127-b1b3-848a604b9dab",
+    "date": "2025-02-17",
+    "value": "204,419",
+    "description": "GOOGL"
+  },
+  {
+    "id": "2d172081-205a-49fe-88fe-b79f25c50503",
+    "date": "2025-02-20",
+    "value": "951,987",
+    "description": "GOOGL"
+  },
+  {
+    "id": "f5b71341-88a8-4e86-9550-1d6b00574fe9",
+    "date": "2025-02-23",
+    "value": "83,207",
+    "description": "GOOGL"
+  },
+  {
+    "id": "74b26c84-9367-43cc-9f60-e8b8f71497b2",
+    "date": "2025-02-26",
+    "value": "$2099039.00",
+    "description": "GOOGL"
+  },
+  {
+    "id": "58e49148-76dc-4658-9f14-8835d4e4560b",
+    "date": "2025-03-01",
+    "value": "1,773,331",
+    "description": "GOOGL"
+  },
+  {
+    "id": "eaf021b9-47bc-495b-a934-cb44e78da49d",
+    "date": "2025-03-04",
+    "value": "293,880",
+    "description": "GOOGL"
+  },
+  {
+    "id": "6b07598c-299f-4534-be50-bc2c3b8f1028",
+    "date": "2025-03-07",
+    "value": "$1839169.04",
+    "description": "GOOGL"
+  },
+  {
+    "id": "3dde369a-e412-469a-bb87-96b4e225b83e",
+    "date": "2025-03-10",
+    "value": "1,075,018",
+    "description": "GOOGL"
+  },
+  {
+    "id": "449ea3cc-f7e7-44f0-84fe-9bf0b6288e3b",
+    "date": "2025-03-13",
+    "value": "648,751",
+    "description": "GOOGL"
+  },
+  {
+    "id": "1641f560-d391-40f8-90cd-e603a75aa959",
+    "date": "2025-03-16",
+    "value": "1,115,309",
+    "description": "GOOGL"
+  },
+  {
+    "id": "2b925cd0-4b8e-428c-99a8-803e6b84a18a",
+    "date": "2025-03-19",
+    "value": "$461593.44",
+    "description": "GOOGL"
+  },
+  {
+    "id": "e7fcec52-c241-490f-a6f2-401382d4b7ff",
+    "date": "2025-03-22",
+    "value": "1,037,444",
+    "description": "GOOGL"
+  },
+  {
+    "id": "83650a89-2888-4782-94af-9919fd4945ef",
+    "date": "2025-03-25",
+    "value": "$264233.62",
+    "description": "GOOGL"
+  },
+  {
+    "id": "53843f32-2c28-4e53-ae2a-a5619ce0b253",
+    "date": "2025-03-28",
+    "value": "2,237,722",
+    "description": "GOOGL"
+  },
+  {
+    "id": "f560b445-39fb-4266-9a69-a2ba4e1bce31",
+    "date": "2025-03-31",
+    "value": "1,725,023",
+    "description": "GOOGL"
+  },
+  {
+    "id": "4975c3d1-deae-48bb-a723-739a308176a1",
+    "date": "2025-04-03",
+    "value": "625,730",
+    "description": "GOOGL"
+  },
+  {
+    "id": "d22802d0-15bd-426b-835b-fca00cdb8b20",
+    "date": "2025-04-06",
+    "value": "1,666,537",
+    "description": "GOOGL"
+  },
+  {
+    "id": "3c366232-4506-4a8f-99a8-ec0ce8de06f0",
+    "date": "2025-04-09",
+    "value": "$1539096.16",
+    "description": "GOOGL"
+  },
+  {
+    "id": "61a18861-a467-45b1-a608-68867cf42048",
+    "date": "2025-04-12",
+    "value": "$1936074.12",
+    "description": "GOOGL"
+  },
+  {
+    "id": "8c15caa6-f54d-4625-b4b6-20a21fb56bae",
+    "date": "2025-04-15",
+    "value": "$110599.05",
+    "description": "GOOGL"
+  },
+  {
+    "id": "9a441291-6981-4580-baa8-a85799680a61",
+    "date": "2025-04-18",
+    "value": "$1671120.40",
+    "description": "GOOGL"
+  },
+  {
+    "id": "c0d30818-65e7-4741-8f63-ce47da61385f",
+    "date": "2025-04-21",
+    "value": "288,110",
+    "description": "GOOGL"
+  },
+  {
+    "id": "6104104a-bf79-45b4-b8f5-5bb227f1fed3",
+    "date": "2025-04-24",
+    "value": "$2197356.17",
+    "description": "GOOGL"
+  }
+]

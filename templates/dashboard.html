@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Data Dashboard</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="dashboard-page">
+        <div class="container">
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+                <div class="dashboard-logo">
+                    <i class="fas fa-chart-line"></i>
+                    <h1>Financial Data Dashboard <i class="fas fa-file-invoice-dollar"></i></h1>
+                </div>
+                <div class="navigation-links">
+                    <a href="/" class="nav-link"><i class="fas fa-home"></i> Welcome</a>
+                    <a href="/about" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="/upload" class="nav-link"><i class="fas fa-file-upload"></i> Upload Data</a>
+                </div>
+            </div>
+
+            <!-- Dashboard Description -->
+            <div class="dashboard-description">
+                <p>View and analyze financial data for various companies. Select a company from the list below to see detailed charts and insights.</p>
+            </div>
+
+            <!-- Main Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Left Column: Company Selection -->
+                <div class="company-selection dashboard-card">
+                    <div class="card-header">
+                        <h2 class="card-title">
+                            <i class="fas fa-building"></i> Company Selection
+                        </h2>
+                    </div>
+                    <p>Select a company to view its financial data</p>
+                    
+                    <div class="company-list">
+                        <div class="company-item" data-symbol="AAPL">
+                            <div class="company-icon">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNMzE4LjcgMjY4LjdjLS4yLTM2LjcgMTYuNC02NC40IDUwLTg0LjgtMTguOC0yNi45LTQ3LjItNDEuNy04NC43LTQ0LjYtMzUuNS0yLjgtNzQuMyAyMC43LTg4LjUgMjAuNy0xNSAwLTQ5LjQtMTkuNy03Ni40LTE5LjdDNjMuMyAxNDEuMiAwIDE4NC44IDAgMjcxLjVjMCAyMS4yIDMuMiA0Mi41IDkuNiA2My41IDEwLjkgMzQuOSA0NS41IDEyNi45IDgyLjYgMTI2LjkgMzYuMyAwIDQzLjktMjYuOCA5MS4yLTI2LjggNDguOSAwIDU0LjcgMjYuOCA5MS4yIDI2LjggMzMuOCAwIDcwLjctODcuOSA4MC4yLTEyMy40LTg4LjQtMjMuOC03My44LTEwNy41LTczLjgtMTA4LjZ6TTEyMC4xIDMyLjRjMTkuOS0yMy4zIDUxLjMtNDAuOSA4Mi40LTQxLjkgMS4xIDQ0LjItMjYuNSA3NS44LTU0LjUgOTYuNy0zMy42IDI0LjMtNTcuNSAzNy44LTgzLjEgNDAuOC0xLjUtNDIuOSAzNS4xLTc2LjkgNTUuMi05NS42eiIvPjwvc3ZnPg==" alt="Apple">
+                            </div>
+                            <div class="company-info">
+                                <div class="company-name">Apple</div>
+                                <div class="company-description">Makes iPhones, iPads, and Mac computers</div>
+                                <div class="company-status">
+                                    <i class="fas fa-chart-line"></i> Growing!
+                                </div>
+                            </div>
+                            <div class="company-badge">Tech</div>
+                        </div>
+
+                        <div class="company-item" data-symbol="MSFT">
+                            <div class="company-icon">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNMCA5My43djMyNC45YzAgMTcgNi43IDMzLjMgMTguNyA0NS4zcy0yOC4zIDE4LjcgNDUuMyAxOC43SDM4NGMxNyAwIDMzLjMtNi43IDQ1LjMtMTguN3MxOC43LTI4LjMgMTguNy00NS4zVjkzLjdjMC0xNy02LjctMzMuMy0xOC43LTQ1LjNTNDAxIDE4LjcgMzg0IDE4LjdIMTY0LjdjLTE3IDAtMzMuMyA2LjctNDUuMyAxOC43UzAgNzYuNyAwIDkzLjd6TTEyOCA0OGMwLTguOCA3LjItMTYgMTYtMTZoMzJjOC44IDAgMTYgNy4yIDE2IDE2djMyYzAgOC44LTcuMiAxNi0xNiAxNmgtMzJjLTguOCAwLTE2LTcuMi0xNi0xNlY0OHptMTYgMzUyVjIyNGMwLTguOCA3LjItMTYgMTYtMTZoMzJjOC44IDAgMTYgNy4yIDE2IDE2VjQwMGMwIDguOC03LjIgMTYtMTYgMTZoLTMyYy04LjggMC0xNi03LjItMTYtMTZ6bTEyOC0zMDRoMzJjOC44IDAgMTYgNy4yIDE2IDE2djMyYzAgOC44LTcuMiAxNi0xNiAxNmgtMzJjLTguOCAwLTE2LTcuMi0xNi0xNlY5NmMwLTguOCA3LjItMTYgMTYtMTZ6bTAtMTZjLTE3LjcgMC0zMiAxNC4zLTMyIDMydjMyYzAgMTcuNyAxNC4zIDMyIDMyIDMyaDMyYzE3LjcgMCAzMi0xNC4zIDMyLTMyVjk2YzAtMTcuNy0xNC4zLTMyLTMyLTMyaC0zMnptMCAyODhoMzJjOC44IDAgMTYgNy4yIDE2IDE2djMyYzAgOC44LTcuMiAxNi0xNiAxNmgtMzJjLTguOCAwLTE2LTcuMi0xNi0xNnYtMzJjMC04LjggNy4yLTE2IDE2LTE2em0wLTE2Yy0xNy43IDAtMzIgMTQuMy0zMiAzMnYzMmMwIDE3LjcgMTQuMyAzMiAzMiAzMmgzMmMxNy43IDAgMzItMTQuMyAzMi0zMnYtMzJjMC0xNy43LTE0LjMtMzItMzItMzJoLTMyek0zMiA5NmMwLTE3LjcgMTQuMy0zMiAzMi0zMmgzMmMxNy43IDAgMzIgMTQuMyAzMiAzMnYzMmMwIDE3LjctMTQuMyAzMi0zMiAzMkg2NGMtMTcuNyAwLTMyLTE0LjMtMzItMzJWOTZ6TTY0IDM2OGgzMmMxNy43IDAgMzIgMTQuMyAzMiAzMnYzMmMwIDE3LjctMTQuMyAzMi0zMiAzMkg2NGMtMTcuNyAwLTMyLTE0LjMtMzItMzJ2LTMyYzAtMTcuNyAxNC4zLTMyIDMyLTMyeiIvPjwvc3ZnPg==" alt="Microsoft">
+                            </div>
+                            <div class="company-info">
+                                <div class="company-name">Microsoft</div>
+                                <div class="company-description">Creates Windows, Office, and cloud services</div>
+                                <div class="company-status">
+                                    <i class="fas fa-chart-line"></i> Growing!
+                                </div>
+                            </div>
+                            <div class="company-badge">Tech</div>
+                        </div>
+
+                        <div class="company-item" data-symbol="GOOGL">
+                            <div class="company-icon">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0ODggNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNNDg4IDI2MS44QzQ4OCA0MDMuMyAzOTEuMSA1MDQgMjQ4IDUwNCA5OS4xIDUwNCAwIDM5NC4yIDAgMjU2Uzk5LjEgOCAyNDggOGMxMDUuMSAwIDE5OS4yIDYxLjkgMjQyLjUgMTUxLjdsLTIwNS4yIDY4LjRjLTguNi0yNS45LTMyLjQtNDQuMy02MC4yLTQ0LjMtMzUuMzMgMC02NCAyOC42Ny02NCA2NHMyOC42NyA2NCA2NCA2NGMyNy44IDAgNTEuNi0xOC40IDYwLjItNDQuM2w2MS4xLTIwLjVjMCAwIDAgLjEgMCAwbDEzNi4xLTQ1LjRDNDg4LjEgMjQwLjkgNDg4IDI1MS4xIDQ4OCAyNjEuOHoiLz48L3N2Zz4=" alt="Google">
+                            </div>
+                            <div class="company-info">
+                                <div class="company-name">Google</div>
+                                <div class="company-description">Search engine and online advertising</div>
+                                <div class="company-status">
+                                    <i class="fas fa-equals"></i> Stable
+                                </div>
+                            </div>
+                            <div class="company-badge">Tech</div>
+                        </div>
+
+                        <div class="company-item" data-symbol="TSLA">
+                            <div class="company-icon">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNMzIwIDEyOEgxMjhhMTI4IDEyOCAwIDEgMCAwIDI1NkgzMjBhMTI4IDEyOCAwIDEgMCAwLTI1NnpNMTI4IDM1MmE5NiA5NiAwIDEgMSAwLTE5MiA5NiA5NiAwIDEgMSAwIDE5MnoiLz48L3N2Zz4=" alt="Tesla">
+                            </div>
+                            <div class="company-info">
+                                <div class="company-name">Tesla</div>
+                                <div class="company-description">Electric cars and clean energy</div>
+                                <div class="company-status">
+                                    <i class="fas fa-chart-line"></i> Growing!
+                                </div>
+                            </div>
+                            <div class="company-badge">Auto</div>
+                        </div>
+
+                        <div class="company-selection-help">
+                            <p>
+                                <i class="fas fa-hand-point-up"></i> Select a company above to view its financial data
+                            </p>
+                            <p class="selection-help-text">
+                                Each company has different financial metrics and performance data
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Charts and Insights -->
+                <div>
+                    <!-- Financial Charts -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h2 class="card-title">
+                                <i class="fas fa-chart-line"></i> Financial Data Charts
+                            </h2>
+                        </div>
+                        <p>Interactive visualization of financial data</p>
+                        
+                        <!-- Data Category Selector -->
+                        <div class="data-category-selector">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                                <div>
+                                    <label for="dataCategorySelect">Data Category:</label>
+                                    <select id="dataCategorySelect">
+                                        <option value="Historical Prices" selected>Historical Prices</option>
+                                        <option value="Income Statement">Income Statement</option>
+                                        <option value="Revenue">Revenue</option>
+                                        <option value="Expenses">Expenses</option>
+                                    </select>
+                                </div>
+                                <div class="date-range-selector">
+                                    <label for="dateRangeSelect">Time Range:</label>
+                                    <select id="dateRangeSelect">
+                                        <option value="all" selected>All Data</option>
+                                        <option value="1m">1 Month</option>
+                                        <option value="3m">3 Months</option>
+                                        <option value="6m">6 Months</option>
+                                        <option value="1y">1 Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="dataSourceIndicator" style="display: none; margin-top: 10px;"></div>
+                        </div>
+                        
+                        <div class="chart-area">
+                            <div class="chart-placeholder">
+                                <i class="fas fa-chart-line"></i>
+                                <p>Select a company to see their financial charts</p>
+                                <p class="chart-placeholder-subtitle">Charts will show stock prices and revenue over time</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insights Portal -->
+                    <div class="insights-section">
+                        <div class="insights-header">
+                            <i class="fas fa-brain"></i>
+                            <h2 class="insights-title">Analysis & Insights</h2>
+                        </div>
+                        <p>Detailed analysis of company financial performance</p>
+                        
+                        <div class="insights-content">
+                            <div class="insights-placeholder">
+                                <i class="fas fa-lightbulb"></i>
+                                <p>Select a company to see insights and explanations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pipeline Status (Hidden by default, can be toggled) -->
+            <div class="dashboard-card" id="pipelineStatus" style="display: none;">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <i class="fas fa-cogs"></i> Pipeline Status
+                    </h2>
+                    <button id="togglePipelineBtn" class="toggle-button">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+                
+                <div id="pipelineContent">
+                    <div class="status {% if 'FAILURE' in status_message %}failure{% endif %}">
+                        <h3>Last Run Status:</h3>
+                        <p>{{ status_message }}</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Pipeline Controls</h3>
+                        <div style="margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+                            <div>
+                                <label for="dataTypeSelect" style="font-weight: bold; display: block; margin-bottom: 5px;">Select Data Type:</label>
+                                <select id="dataTypeSelect" style="padding: 8px; border-radius: 4px; border: 1px solid #ddd; min-width: 180px;">
+                                    <option value="Historical Prices" selected>Historical Prices</option>
+                                    <option value="Income Statement">Income Statement</option>
+                                    <option value="Revenue">Revenue</option>
+                                    <option value="Expenses">Expenses</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="companySelect" style="font-weight: bold; display: block; margin-bottom: 5px;">Select Company:</label>
+                                <select id="companySelect" style="padding: 8px; border-radius: 4px; border: 1px solid #ddd; min-width: 180px;">
+                                    <option value="AAPL" selected>Apple Inc. (AAPL)</option>
+                                    <option value="MSFT">Microsoft Corp. (MSFT)</option>
+                                    <option value="GOOGL">Alphabet Inc. (GOOGL)</option>
+                                    <option value="TSLA">Tesla Inc. (TSLA)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button id="runPipelineBtn" class="run-button">Run Pipeline Now</button>
+                        <div id="processingMessage" class="processing-message">
+                            <p>⚙️ <strong>Pipeline running...</strong> This may take a few moments. The page will refresh automatically when complete.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Data Transformation Showcase -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <i class="fas fa-exchange-alt"></i> Data Transformation Showcase
+                    </h2>
+                    <button id="toggleDataShowcaseBtn" class="toggle-button">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+                
+                <div id="dataShowcaseContent">
+                    <p>See how data is transformed through the pipeline - from raw API data to standardized database records</p>
+                    
+                    <div class="data-showcase-grid">
+                        <!-- Before: Raw API Data -->
+                        <div class="data-showcase-card">
+                            <div class="data-showcase-header">
+                                <h3><i class="fas fa-file-import"></i> Before: Raw API Data</h3>
+                                <span class="data-badge">API Response</span>
+                            </div>
+                            <div class="data-showcase-content">
+                                <pre class="code-block">{{ raw_data_sample }}</pre>
+                            </div>
+                            <div class="data-showcase-footer">
+                                <p><i class="fas fa-info-circle"></i> Raw data directly from the Financial Modeling Prep API</p>
+                            </div>
+                        </div>
+                        
+                        <!-- After: Standardized Data -->
+                        <div class="data-showcase-card">
+                            <div class="data-showcase-header">
+                                <h3><i class="fas fa-database"></i> After: Standardized Data</h3>
+                                <span class="data-badge">Database Records</span>
+                            </div>
+                            <div class="data-showcase-content">
+                                <pre class="code-block">{{ standardized_data_sample }}</pre>
+                            </div>
+                            <div class="data-showcase-footer">
+                                <p><i class="fas fa-check-circle"></i> Standardized data stored in SQLite database</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="data-transformation-notes">
+                        <h4>Key Transformations:</h4>
+                        <ul>
+                            <li>Dates standardized to YYYY-MM-DD format</li>
+                            <li>Values converted to consistent numeric format</li>
+                            <li>Data categorized by type and description</li>
+                            <li>Consistent schema applied across all records</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Dashboard Page JavaScript -->
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+    
+    <!-- Pipeline Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleBtn = document.getElementById('togglePipelineBtn');
+            const pipelineStatus = document.getElementById('pipelineStatus');
+            const pipelineContent = document.getElementById('pipelineContent');
+            
+            // Add button to show pipeline controls
+            const dashboardHeader = document.querySelector('.dashboard-header');
+            const pipelineButton = document.createElement('button');
+            pipelineButton.classList.add('pipeline-button');
+            pipelineButton.innerHTML = '<i class="fas fa-cogs"></i> Pipeline Controls';
+            dashboardHeader.appendChild(pipelineButton);
+            
+            pipelineButton.addEventListener('click', function() {
+                pipelineStatus.style.display = 'block';
+                this.style.display = 'none';
+            });
+            
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', function() {
+                    if (pipelineContent.style.display === 'none') {
+                        pipelineContent.style.display = 'block';
+                        this.innerHTML = '<i class="fas fa-chevron-up"></i>';
+                    } else {
+                        pipelineContent.style.display = 'none';
+                        this.innerHTML = '<i class="fas fa-chevron-down"></i>';
+                    }
+                });
+            }
+            
+            // Connect company selection to pipeline
+            const companyItems = document.querySelectorAll('.company-item');
+            const companySelect = document.getElementById('companySelect');
+            
+            companyItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const symbol = this.getAttribute('data-symbol');
+                    if (companySelect) {
+                        companySelect.value = symbol;
+                    }
+                });
+            });
+            
+            // Run pipeline button
+            const runButton = document.getElementById('runPipelineBtn');
+            const processingMessage = document.getElementById('processingMessage');
+            
+            if (runButton && processingMessage) {
+                runButton.addEventListener('click', function() {
+                    // Disable button to prevent multiple clicks
+                    runButton.disabled = true;
+                    
+                    // Show processing message
+                    processingMessage.style.display = 'block';
+                    
+                    // Get selected data type and company
+                    const dataType = document.getElementById('dataTypeSelect').value;
+                    const symbol = document.getElementById('companySelect').value;
+                    
+                    // Sync with data category selector in the chart area
+                    const dataCategorySelect = document.getElementById('dataCategorySelect');
+                    if (dataCategorySelect) {
+                        dataCategorySelect.value = dataType;
+                    }
+                    
+                    // Update processing message to include company
+                    processingMessage.innerHTML = `<p>⚙️ <strong>Pipeline running...</strong> Fetching ${dataType} data for ${symbol}. This may take a few moments. The page will refresh automatically when complete.</p>`;
+                    
+                    // Send request to run pipeline with data type and company
+                    fetch('/run_pipeline', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            data_type: dataType,
+                            symbol: symbol
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Set up automatic refresh to check for completion
+                        setTimeout(function() {
+                            location.reload();
+                        }, 5000); // Refresh after 5 seconds
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                        alert('Error starting pipeline: ' + error);
+                        
+                        // Re-enable button and hide message on error
+                        runButton.disabled = false;
+                        processingMessage.style.display = 'none';
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

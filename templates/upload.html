@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Financial Data</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="dashboard-page">
+        <div class="container">
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+                <div class="dashboard-logo">
+                    <i class="fas fa-chart-line"></i>
+                    <h1>Financial Data Upload <i class="fas fa-file-upload"></i></h1>
+                </div>
+                <div class="navigation-links">
+                    <a href="/" class="nav-link"><i class="fas fa-home"></i> Welcome</a>
+                    <a href="/dashboard" class="nav-link"><i class="fas fa-chart-bar"></i> Dashboard</a>
+                    <a href="/about" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                </div>
+            </div>
+
+            <!-- Upload Description -->
+            <div class="dashboard-description">
+                <p>Upload your own financial data to be processed through the pipeline and visualized in the dashboard.</p>
+            </div>
+
+            <!-- Upload Form -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <i class="fas fa-file-upload"></i> Upload Financial Data
+                    </h2>
+                </div>
+                
+                <div class="upload-form-container">
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="dataFile">Select Data File:</label>
+                            <input type="file" id="dataFile" name="dataFile" accept=".csv,.json,.xlsx" required>
+                            <p class="form-help">Supported formats: CSV, JSON, Excel</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dataSymbol">Company Symbol:</label>
+                            <input type="text" id="dataSymbol" name="dataSymbol" placeholder="e.g., AAPL, MSFT" required>
+                            <p class="form-help">This will be used to identify your data in the dashboard</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dataCategory">Data Category:</label>
+                            <select id="dataCategory" name="dataCategory" required>
+                                <option value="Historical Prices">Historical Prices</option>
+                                <option value="Income Statement">Income Statement</option>
+                                <option value="Revenue">Revenue</option>
+                                <option value="Expenses">Expenses</option>
+                                <option value="Custom">Custom Category</option>
+                            </select>
+                        </div>
+                        
+                        <div id="customCategoryGroup" class="form-group" style="display: none;">
+                            <label for="customCategory">Custom Category Name:</label>
+                            <input type="text" id="customCategory" name="customCategory" placeholder="e.g., Quarterly Sales">
+                        </div>
+                        
+                        <div class="form-group mapping-section">
+                            <h3>Data Mapping</h3>
+                            <p>Tell us which columns in your data correspond to our required fields:</p>
+                            
+                            <div class="mapping-fields">
+                                <div class="mapping-field">
+                                    <label for="dateColumn">Date Column:</label>
+                                    <select id="dateColumn" name="dateColumn" required>
+                                        <option value="">Select Date Column</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mapping-field">
+                                    <label for="valueColumn">Value Column:</label>
+                                    <select id="valueColumn" name="valueColumn" required>
+                                        <option value="">Select Value Column</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mapping-field">
+                                    <label for="descriptionColumn">Description Column (optional):</label>
+                                    <select id="descriptionColumn" name="descriptionColumn">
+                                        <option value="">Select Description Column (Optional)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="primary-button">
+                                <i class="fas fa-upload"></i> Upload and Process
+                            </button>
+                            <button type="button" id="previewBtn" class="secondary-button" disabled>
+                                <i class="fas fa-eye"></i> Preview Data
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div id="uploadStatus" class="upload-status" style="display: none;">
+                        <div class="spinner"></div>
+                        <p id="statusMessage">Processing your data...</p>
+                        <div class="progress-bar-container">
+                            <div id="progressBar" class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Data Preview Section -->
+            <div class="dashboard-card" id="previewSection" style="display: none;">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <i class="fas fa-table"></i> Data Preview
+                    </h2>
+                </div>
+                
+                <div class="preview-container">
+                    <div class="preview-controls">
+                        <span id="previewCount">Showing first 10 rows of your data</span>
+                        <button id="closePreviewBtn" class="close-button">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="preview-table-container">
+                        <table id="previewTable" class="preview-table">
+                            <thead>
+                                <tr id="previewHeader"></tr>
+                            </thead>
+                            <tbody id="previewBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column Mapping Preview Section -->
+            <div class="dashboard-card" id="columnMappingPreviewSection" style="display: none;">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <i class="fas fa-map-marked-alt"></i> Column Mapping Preview
+                    </h2>
+                </div>
+                <div class="preview-container">
+                    <p>Confirm how your selected columns map to our system:</p>
+                    <ul id="columnMappingList" class="mapping-preview-list">
+                        <!-- Mapped columns will be inserted here by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Upload Results -->
+            <div class="dashboard-card" id="resultsSection" style="display: none;">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <i class="fas fa-check-circle"></i> Upload Results
+                    </h2>
+                </div>
+                
+                <div class="results-container">
+                    <div id="uploadResults" class="upload-results">
+                        <div class="result-item">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="result-details">
+                                <h3>File Processed</h3>
+                                <p id="fileDetails">filename.csv (0 KB)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="result-item">
+                            <i class="fas fa-database"></i>
+                            <div class="result-details">
+                                <h3>Records Processed</h3>
+                                <p id="recordCount">0 records standardized and stored</p>
+                            </div>
+                        </div>
+                        
+                        <div class="result-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="result-details">
+                                <h3>Data Ready for Visualization</h3>
+                                <p>Your data is now available in the dashboard</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-actions">
+                        <a href="/dashboard" class="primary-button">
+                            <i class="fas fa-chart-bar"></i> Go to Dashboard
+                        </a>
+                        <button id="uploadAnotherBtn" class="secondary-button">
+                            <i class="fas fa-upload"></i> Upload Another File
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Upload Page JavaScript -->
+    <script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+</body>
+</html>

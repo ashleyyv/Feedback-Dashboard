@@ -1,0 +1,602 @@
+[
+  {
+    "id": "7a5dd339-32f8-4a43-86f9-bd4d69a3ff3f",
+    "date": "08/13/2024",
+    "value": "6,643",
+    "description": "Assets"
+  },
+  {
+    "id": "d16f80e4-3621-4b7b-ac4f-56f564e20f05",
+    "date": "2024-06-30",
+    "value": "$8290.07",
+    "description": "Expenses"
+  },
+  {
+    "id": "9eff67f9-1036-4a07-b45b-b02abeec971c",
+    "date": "Nov 04, 2024",
+    "value": "$3690.18",
+    "description": "Assets"
+  },
+  {
+    "id": "c39b3019-db93-4352-bcb3-b0aff687460f",
+    "date": "03/08/2025",
+    "value": "$2365.24",
+    "description": "Investments"
+  },
+  {
+    "id": "b6b080af-3f1e-4346-b8c3-672ebf71ab3e",
+    "date": "26-Nov-2024",
+    "value": "2,698",
+    "description": "Investments"
+  },
+  {
+    "id": "566ab00a-d9bb-4645-8e0b-405125c8df27",
+    "date": "06-May-2025",
+    "value": "3,767",
+    "description": "Revenue"
+  },
+  {
+    "id": "9b0a8dc0-8edb-4a4c-b215-a48e3e8f6542",
+    "date": "Sep 03, 2024",
+    "value": "656",
+    "description": "Investments"
+  },
+  {
+    "id": "39543a49-e58c-4ca4-bd3a-b936bf82016c",
+    "date": "08/05/2024",
+    "value": "$6502.69",
+    "description": "Consulting services"
+  },
+  {
+    "id": "6bfe9035-4b4b-4559-a0d8-823a1e1cfbba",
+    "date": "11/23/2024",
+    "value": "$9122.01",
+    "description": "Assets"
+  },
+  {
+    "id": "4ce9ac16-a449-4135-b2e3-d5d931356d42",
+    "date": "06/23/2025",
+    "value": "$1378.76",
+    "description": "Expenses"
+  },
+  {
+    "id": "d11af901-b752-4d27-8b55-86fc66031519",
+    "date": "Mar 19, 2025",
+    "value": "8,403",
+    "description": "Investments"
+  },
+  {
+    "id": "9b45b055-92ab-439e-aa31-4351985e3640",
+    "date": "02/27/2025",
+    "value": "$2546.92",
+    "description": "Consulting services"
+  },
+  {
+    "id": "0d25fa82-dd48-435f-82b9-4cb6a6c19418",
+    "date": "2025-03-23",
+    "value": "$3844.88",
+    "description": "Investments"
+  },
+  {
+    "id": "1b484842-8da9-4537-9832-f42ba843fa9e",
+    "date": "Feb 03, 2025",
+    "value": "$3804.01",
+    "description": "Assets"
+  },
+  {
+    "id": "91ff5620-c798-4628-b66d-6c1c496fd6a7",
+    "date": "May 09, 2025",
+    "value": "6,719",
+    "description": "Consulting services"
+  },
+  {
+    "id": "a8ec6de2-3e7a-4e48-9f6d-dc1982b469a9",
+    "date": "Jun 27, 2025",
+    "value": "7,300",
+    "description": "Assets"
+  },
+  {
+    "id": "c3997390-164b-4b4a-94f5-875fa00ec4a1",
+    "date": "Jul 04, 2024",
+    "value": "2,922",
+    "description": "Investments"
+  },
+  {
+    "id": "f819956b-be9b-417d-9ee5-c72488c252e0",
+    "date": "2025-06-22",
+    "value": "3,577",
+    "description": "Consulting services"
+  },
+  {
+    "id": "4edb5126-c421-4b7d-aaf3-365277654508",
+    "date": "06-Oct-2024",
+    "value": "$349.75",
+    "description": "Consulting services"
+  },
+  {
+    "id": "b7325c45-e4c5-42a6-a554-1adeb0e558f9",
+    "date": "2024-07-24",
+    "value": "$2284.39",
+    "description": "Consulting services"
+  },
+  {
+    "id": "f36da50e-7127-4abb-bae1-3f55e0855627",
+    "date": "11/01/2024",
+    "value": "6,126",
+    "description": "Revenue"
+  },
+  {
+    "id": "dbf3fead-6472-4fa7-a72a-2e0b2c988c1a",
+    "date": "09/01/2024",
+    "value": "958",
+    "description": "Expenses"
+  },
+  {
+    "id": "c2591e30-528b-41bb-baca-85a06e820b00",
+    "date": "11/22/2024",
+    "value": "9,346",
+    "description": "Expenses"
+  },
+  {
+    "id": "8be73434-4e7d-4ca9-9698-70836c957822",
+    "date": "2024-11-06",
+    "value": "6,729",
+    "description": "Revenue"
+  },
+  {
+    "id": "7d73816e-6d05-4c77-8a42-3891e2fc4dae",
+    "date": "2025-04-02",
+    "value": "$4851.76",
+    "description": "Investments"
+  },
+  {
+    "id": "0731da19-6178-4c0e-b691-fe529ee49e46",
+    "date": "04/16/2025",
+    "value": "$9748.80",
+    "description": "Revenue"
+  },
+  {
+    "id": "8773e5ad-e2f2-497d-afa0-7ed0302f4063",
+    "date": "Jan 20, 2025",
+    "value": "5,881",
+    "description": "Expenses"
+  },
+  {
+    "id": "48648d42-1c46-4f2e-92fa-520c86ff75a6",
+    "date": "09/14/2024",
+    "value": "$3869.75",
+    "description": "Assets"
+  },
+  {
+    "id": "bbe1c0fe-da7d-4f48-96d3-c09ac9c7a3e2",
+    "date": "07-Jan-2025",
+    "value": "$9078.95",
+    "description": "Assets"
+  },
+  {
+    "id": "420bb6d2-a877-446e-9a24-f2683db1cccf",
+    "date": "Dec 12, 2024",
+    "value": "1,026",
+    "description": "Assets"
+  },
+  {
+    "id": "00452354-86f8-4d88-8ff7-6c8145f544c8",
+    "date": "Nov 24, 2024",
+    "value": "6,242",
+    "description": "Assets"
+  },
+  {
+    "id": "571b13d8-7b94-4f2b-8e32-13e8ffcd7a92",
+    "date": "2025-03-28",
+    "value": "$6099.08",
+    "description": "Expenses"
+  },
+  {
+    "id": "84cb4ec6-44c3-491d-a064-c7b9d39883ea",
+    "date": "23-Jul-2024",
+    "value": "1,729",
+    "description": "Investments"
+  },
+  {
+    "id": "82b599fd-d520-4987-8ca3-d3b316b7039a",
+    "date": "09/22/2024",
+    "value": "5,109",
+    "description": "Assets"
+  },
+  {
+    "id": "2786fe1c-afd5-441e-87d8-90b2dc07d4b3",
+    "date": "10/11/2024",
+    "value": "$9692.65",
+    "description": "Expenses"
+  },
+  {
+    "id": "28b9ab05-57cf-4b66-9e9f-8daf79b4617d",
+    "date": "17-Mar-2025",
+    "value": "$3765.73",
+    "description": "Revenue"
+  },
+  {
+    "id": "0e4accca-9df9-4d20-b73e-1bf0060c00a7",
+    "date": "2024-09-02",
+    "value": "$9763.91",
+    "description": "Investments"
+  },
+  {
+    "id": "1d1ecfef-de0a-4f37-894a-e7b6bf79ed09",
+    "date": "May 06, 2025",
+    "value": "$3530.87",
+    "description": "Revenue"
+  },
+  {
+    "id": "8cdbdd68-88fb-4ab1-9d91-8763acd4298e",
+    "date": "Jan 13, 2025",
+    "value": "$3867.30",
+    "description": "Investments"
+  },
+  {
+    "id": "10513ceb-2cb1-49a4-9fc2-779bc7b34009",
+    "date": "2024-12-03",
+    "value": "9,614",
+    "description": "Consulting services"
+  },
+  {
+    "id": "0d59f6bb-d1af-4584-a602-7569a294005d",
+    "date": "Jan 19, 2025",
+    "value": "$279.60",
+    "description": "Expenses"
+  },
+  {
+    "id": "59f8533c-02e7-432c-baf8-830ed15c6bc5",
+    "date": "03/16/2025",
+    "value": "$882.61",
+    "description": "Expenses"
+  },
+  {
+    "id": "63e72d83-bf09-46b7-a124-42abee2b6bc4",
+    "date": "05/28/2025",
+    "value": "$2291.94",
+    "description": "Investments"
+  },
+  {
+    "id": "34635c1c-ddb0-4642-96d9-dfed7e7ef951",
+    "date": "2025-04-28",
+    "value": "880",
+    "description": "Expenses"
+  },
+  {
+    "id": "9c450704-e838-4449-9335-28f4baa627bb",
+    "date": "2024-12-08",
+    "value": "6,233",
+    "description": "Investments"
+  },
+  {
+    "id": "808c6956-e090-4195-9425-6fecf8f2cb59",
+    "date": "09/26/2024",
+    "value": "$528.33",
+    "description": "Investments"
+  },
+  {
+    "id": "1a03ab4a-b5a2-4031-8095-ae93866322fd",
+    "date": "Feb 06, 2025",
+    "value": "$6132.57",
+    "description": "Consulting services"
+  },
+  {
+    "id": "22b9ec70-6857-4048-bddc-64d1f9f0009b",
+    "date": "Aug 20, 2024",
+    "value": "$788.21",
+    "description": "Consulting services"
+  },
+  {
+    "id": "8aa7cbfa-a081-4225-9ba2-7198e725831e",
+    "date": "04-Aug-2024",
+    "value": "9,919",
+    "description": "Expenses"
+  },
+  {
+    "id": "954fef85-281e-4a9e-ac4e-9169c64b3ae9",
+    "date": "2024-11-28",
+    "value": "8,928",
+    "description": "Consulting services"
+  },
+  {
+    "id": "7d204281-24ac-44e6-a5aa-151ecf6a7e86",
+    "date": "12-Nov-2024",
+    "value": "$4312.88",
+    "description": "Consulting services"
+  },
+  {
+    "id": "292e593c-3fdd-4c8c-b352-4277ab3cc001",
+    "date": "Dec 18, 2024",
+    "value": "$1204.05",
+    "description": "Assets"
+  },
+  {
+    "id": "d994e3e1-d4f7-4553-9104-687f0a08b247",
+    "date": "05/09/2025",
+    "value": "4,659",
+    "description": "Expenses"
+  },
+  {
+    "id": "6d1ed203-084e-4266-ba00-64d78f0ac297",
+    "date": "May 09, 2025",
+    "value": "$5126.67",
+    "description": "Revenue"
+  },
+  {
+    "id": "ef09b548-5060-453a-b80b-a2ddf36c3789",
+    "date": "2024-12-16",
+    "value": "5,981",
+    "description": "Investments"
+  },
+  {
+    "id": "e574c4c9-0a10-4a18-ac7c-1d053db0481c",
+    "date": "2025-04-28",
+    "value": "9,345",
+    "description": "Consulting services"
+  },
+  {
+    "id": "53e5f31f-ad8d-40ba-8f9b-342d4bf8415c",
+    "date": "2024-10-02",
+    "value": "789",
+    "description": "Investments"
+  },
+  {
+    "id": "376bf367-8d10-4b9e-9609-f262cf9dc2db",
+    "date": "07-Apr-2025",
+    "value": "8,697",
+    "description": "Consulting services"
+  },
+  {
+    "id": "21faa0c8-84ea-42f0-aaf6-842092da0ce6",
+    "date": "Nov 25, 2024",
+    "value": "6,314",
+    "description": "Consulting services"
+  },
+  {
+    "id": "ed98258a-92bb-43cc-9c2f-197677908ae7",
+    "date": "01/15/2025",
+    "value": "6,253",
+    "description": "Expenses"
+  },
+  {
+    "id": "ccde323f-1fe3-4ec9-b410-15050278d568",
+    "date": "21-Dec-2024",
+    "value": "$1980.59",
+    "description": "Expenses"
+  },
+  {
+    "id": "eb3e0704-6763-407c-a79e-27990f8dd250",
+    "date": "22-Jan-2025",
+    "value": "$6856.94",
+    "description": "Assets"
+  },
+  {
+    "id": "6263664e-7d69-4386-887a-aa891de3df49",
+    "date": "2024-07-17",
+    "value": "$4226.81",
+    "description": "Assets"
+  },
+  {
+    "id": "01b16aae-9217-49b4-b94a-f4f353315fd2",
+    "date": "2024-07-05",
+    "value": "7,551",
+    "description": "Investments"
+  },
+  {
+    "id": "a12e6aad-f8c4-4b9b-9b4b-cc1d905df848",
+    "date": "2025-02-22",
+    "value": "8,169",
+    "description": "Revenue"
+  },
+  {
+    "id": "3b521990-cb37-4f90-ba36-46760ea97d9d",
+    "date": "Jan 14, 2025",
+    "value": "$29.92",
+    "description": "Expenses"
+  },
+  {
+    "id": "9bdce6c5-ded4-445c-8603-e0bfb8a9b554",
+    "date": "Feb 11, 2025",
+    "value": "6,240",
+    "description": "Investments"
+  },
+  {
+    "id": "1c2f51bf-1b35-4d2a-8426-0eb39065f2b8",
+    "date": "13-Feb-2025",
+    "value": "$1092.19",
+    "description": "Assets"
+  },
+  {
+    "id": "88ef9204-519c-4cbf-acb2-7a18feb00079",
+    "date": "2024-11-26",
+    "value": "$7506.07",
+    "description": "Consulting services"
+  },
+  {
+    "id": "692d8c09-c4c6-4fd2-9d8e-25f5297ec0fb",
+    "date": "Mar 22, 2025",
+    "value": "$2531.55",
+    "description": "Investments"
+  },
+  {
+    "id": "a467b916-ef10-405b-8891-de9f74aa3028",
+    "date": "2024-09-26",
+    "value": "7,585",
+    "description": "Assets"
+  },
+  {
+    "id": "24985b79-6cfa-4da0-a91f-430c33761cba",
+    "date": "2025-04-06",
+    "value": "$733.83",
+    "description": "Consulting services"
+  },
+  {
+    "id": "edf5d0bd-0121-4a91-b7a0-03c553a91e63",
+    "date": "05/24/2025",
+    "value": "8,629",
+    "description": "Consulting services"
+  },
+  {
+    "id": "e907a3c0-edea-4284-acb1-463e362e5c9c",
+    "date": "07/27/2024",
+    "value": "$9641.97",
+    "description": "Consulting services"
+  },
+  {
+    "id": "9784a3e3-97cc-4270-a630-83fd9ec70271",
+    "date": "12/30/2024",
+    "value": "5,403",
+    "description": "Revenue"
+  },
+  {
+    "id": "0ce5dc53-8e47-44df-a893-967d24aed6de",
+    "date": "Jul 31, 2024",
+    "value": "608",
+    "description": "Consulting services"
+  },
+  {
+    "id": "180fa77a-f6b1-4c3b-bbb4-202649023926",
+    "date": "2025-05-14",
+    "value": "$1256.53",
+    "description": "Assets"
+  },
+  {
+    "id": "e166e394-38f9-48dc-a37c-4042b52d0bce",
+    "date": "Sep 11, 2024",
+    "value": "$710.00",
+    "description": "Investments"
+  },
+  {
+    "id": "bdb427e2-5310-41f4-9c7b-d9a92f47dc17",
+    "date": "03/30/2025",
+    "value": "$4153.39",
+    "description": "Revenue"
+  },
+  {
+    "id": "b9125143-c5dc-48ba-80cd-45eb520d174f",
+    "date": "10/01/2024",
+    "value": "8,797",
+    "description": "Expenses"
+  },
+  {
+    "id": "78f02b20-b817-48c4-a68e-9a188b907660",
+    "date": "18-Apr-2025",
+    "value": "$390.58",
+    "description": "Revenue"
+  },
+  {
+    "id": "7473a4c9-7fa6-443d-9b20-07f41a0c2f59",
+    "date": "2024-12-09",
+    "value": "544",
+    "description": "Consulting services"
+  },
+  {
+    "id": "930571e0-0d49-42a7-add9-889247c04824",
+    "date": "26-Nov-2024",
+    "value": "8,294",
+    "description": "Investments"
+  },
+  {
+    "id": "0277a553-0273-415a-888c-8e8c42a8d7b1",
+    "date": "Jan 18, 2025",
+    "value": "5,488",
+    "description": "Assets"
+  },
+  {
+    "id": "8e19a80c-9f39-4512-8a62-8c8217df6aa2",
+    "date": "2025-06-12",
+    "value": "867",
+    "description": "Assets"
+  },
+  {
+    "id": "2b94352b-5f9c-4d9f-8b9f-54981c3d3d4c",
+    "date": "Apr 26, 2025",
+    "value": "$1157.60",
+    "description": "Consulting services"
+  },
+  {
+    "id": "0554d61d-2083-42fc-9051-c84b330b37c2",
+    "date": "Jun 16, 2025",
+    "value": "1,229",
+    "description": "Assets"
+  },
+  {
+    "id": "a7687cee-2189-40e4-aa5e-d2e998edf518",
+    "date": "03/08/2025",
+    "value": "355",
+    "description": "Expenses"
+  },
+  {
+    "id": "96092ac2-2c06-4ac4-b542-a84eb399681e",
+    "date": "10/31/2024",
+    "value": "4,188",
+    "description": "Investments"
+  },
+  {
+    "id": "308b3d13-6111-4975-aafc-0623e28a4399",
+    "date": "20-Jan-2025",
+    "value": "$8005.45",
+    "description": "Assets"
+  },
+  {
+    "id": "f1b24eda-f8cf-48fb-a456-bca1ad8deee3",
+    "date": "22-Sep-2024",
+    "value": "$4230.20",
+    "description": "Expenses"
+  },
+  {
+    "id": "5e643faa-d807-407c-ac3c-bd00046b2dd1",
+    "date": "19-Feb-2025",
+    "value": "$9745.77",
+    "description": "Expenses"
+  },
+  {
+    "id": "a7ffb065-541e-4754-b361-6ed91551ac45",
+    "date": "Sep 26, 2024",
+    "value": "$3631.72",
+    "description": "Consulting services"
+  },
+  {
+    "id": "c3f3ed0b-c7ed-4f0c-9a47-03454fe8ed2d",
+    "date": "2025-02-04",
+    "value": "$5029.02",
+    "description": "Expenses"
+  },
+  {
+    "id": "dd6460e8-1003-45b7-9a57-33b104723e4c",
+    "date": "2025-03-13",
+    "value": "$2505.61",
+    "description": "Assets"
+  },
+  {
+    "id": "2cf4b31a-d75b-4377-9233-868e32be1339",
+    "date": "2025-05-01",
+    "value": "5,567",
+    "description": "Assets"
+  },
+  {
+    "id": "e2103b8b-64f2-40e8-b9ef-5094d7db3cd4",
+    "date": "2024-11-27",
+    "value": "47",
+    "description": "Consulting services"
+  },
+  {
+    "id": "ea4257fb-3a7c-4af0-bd2b-90ce0a8d5d53",
+    "date": "2024-11-13",
+    "value": "3,441",
+    "description": "Revenue"
+  },
+  {
+    "id": "48c46c35-7af4-4e03-b652-ff4e6dd09a1b",
+    "date": "Sep 07, 2024",
+    "value": "$4109.90",
+    "description": "Expenses"
+  },
+  {
+    "id": "65cc15a0-8b1a-4e40-b214-25dfad0bf09f",
+    "date": "Apr 09, 2025",
+    "value": "9,482",
+    "description": "Assets"
+  }
+]

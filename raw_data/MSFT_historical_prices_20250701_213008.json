@@ -1,0 +1,602 @@
+[
+  {
+    "id": "59fa3aa0-c490-4d71-8c7a-536cebb4a3f0",
+    "date": "2024-07-01",
+    "value": "101",
+    "description": "MSFT"
+  },
+  {
+    "id": "0c795b12-4447-4ea0-b9cd-e6d7234c1fd9",
+    "date": "2024-07-04",
+    "value": "724",
+    "description": "MSFT"
+  },
+  {
+    "id": "672d2be4-8255-432a-94fa-17ae868e3722",
+    "date": "2024-07-07",
+    "value": "314",
+    "description": "MSFT"
+  },
+  {
+    "id": "e74470aa-6b12-469e-97ef-1f90e6c3012d",
+    "date": "2024-07-10",
+    "value": "659",
+    "description": "MSFT"
+  },
+  {
+    "id": "8514dc0a-9cf4-4eec-b979-9f1a1aeb7bea",
+    "date": "2024-07-13",
+    "value": "756",
+    "description": "MSFT"
+  },
+  {
+    "id": "eb36185c-30e3-41a7-9a11-8c72eb7ed2b9",
+    "date": "2024-07-16",
+    "value": "95",
+    "description": "MSFT"
+  },
+  {
+    "id": "ab71fd51-abc5-4d7f-822a-90737800818f",
+    "date": "2024-07-19",
+    "value": "$1072.65",
+    "description": "MSFT"
+  },
+  {
+    "id": "cfb8db46-911f-4bc1-91c4-8dcef7da3699",
+    "date": "2024-07-22",
+    "value": "273",
+    "description": "MSFT"
+  },
+  {
+    "id": "1889c547-6f28-4591-a8f0-2639cba4d094",
+    "date": "2024-07-25",
+    "value": "805",
+    "description": "MSFT"
+  },
+  {
+    "id": "4cf01bbc-2da5-49cc-83a3-894d899dafdc",
+    "date": "2024-07-28",
+    "value": "301",
+    "description": "MSFT"
+  },
+  {
+    "id": "750c7101-5328-4573-8a69-420dd6356d84",
+    "date": "2024-07-31",
+    "value": "$320.24",
+    "description": "MSFT"
+  },
+  {
+    "id": "ae2e93fa-a958-465d-b51b-6b562d490bee",
+    "date": "2024-08-03",
+    "value": "$1012.89",
+    "description": "MSFT"
+  },
+  {
+    "id": "e018bc19-189c-4d5b-8890-1f5d1f594ecd",
+    "date": "2024-08-06",
+    "value": "817",
+    "description": "MSFT"
+  },
+  {
+    "id": "b566419d-df74-4fbe-9258-6f0f9f9ec942",
+    "date": "2024-08-09",
+    "value": "$412.34",
+    "description": "MSFT"
+  },
+  {
+    "id": "736b043f-5524-489d-971b-c325a241273b",
+    "date": "2024-08-12",
+    "value": "605",
+    "description": "MSFT"
+  },
+  {
+    "id": "a0c3b6e4-66f5-42f5-8c54-52aa8e399532",
+    "date": "2024-08-15",
+    "value": "1,066",
+    "description": "MSFT"
+  },
+  {
+    "id": "1074637e-c834-47a8-a47b-ab2f42c9d20d",
+    "date": "2024-08-18",
+    "value": "$218.86",
+    "description": "MSFT"
+  },
+  {
+    "id": "433c4f94-c4d7-40ca-b9d6-3e2d464932f8",
+    "date": "2024-08-21",
+    "value": "1,136",
+    "description": "MSFT"
+  },
+  {
+    "id": "df21203a-d652-4aed-870f-b2d3b84d9f6e",
+    "date": "2024-08-24",
+    "value": "421",
+    "description": "MSFT"
+  },
+  {
+    "id": "d719dad8-445b-4056-88e2-bdd93ba2a595",
+    "date": "2024-08-27",
+    "value": "534",
+    "description": "MSFT"
+  },
+  {
+    "id": "d49421ac-a578-4a9d-8600-5532283f198c",
+    "date": "2024-08-30",
+    "value": "$272.12",
+    "description": "MSFT"
+  },
+  {
+    "id": "b09b0deb-a19d-4131-9aa4-3157f8e8cb1b",
+    "date": "2024-09-02",
+    "value": "194",
+    "description": "MSFT"
+  },
+  {
+    "id": "479a4cc5-aca0-475f-a262-8a4d66a306e9",
+    "date": "2024-09-05",
+    "value": "125",
+    "description": "MSFT"
+  },
+  {
+    "id": "72b8d183-ad5f-4418-b177-bde51e783975",
+    "date": "2024-09-08",
+    "value": "997",
+    "description": "MSFT"
+  },
+  {
+    "id": "ac91ad96-2829-46d7-85fc-91686861a85c",
+    "date": "2024-09-11",
+    "value": "$1194.75",
+    "description": "MSFT"
+  },
+  {
+    "id": "135afbe7-46eb-49ec-9874-090f6c05d646",
+    "date": "2024-09-14",
+    "value": "17",
+    "description": "MSFT"
+  },
+  {
+    "id": "543533ca-67b8-42b8-95bb-5653cb91a444",
+    "date": "2024-09-17",
+    "value": "964",
+    "description": "MSFT"
+  },
+  {
+    "id": "aa3dbf9f-b1c7-4320-9872-b5518625eb79",
+    "date": "2024-09-20",
+    "value": "$830.35",
+    "description": "MSFT"
+  },
+  {
+    "id": "51553ba9-d43e-4e0e-baa5-ddd52501cffe",
+    "date": "2024-09-23",
+    "value": "896",
+    "description": "MSFT"
+  },
+  {
+    "id": "db0dfe3e-65e4-4008-9138-e8f8633cf706",
+    "date": "2024-09-26",
+    "value": "560",
+    "description": "MSFT"
+  },
+  {
+    "id": "ea758f00-9931-4f59-9dd5-6067814eb233",
+    "date": "2024-09-29",
+    "value": "$1041.44",
+    "description": "MSFT"
+  },
+  {
+    "id": "9844c0aa-06fd-43cc-a4ae-b499970c76f5",
+    "date": "2024-10-02",
+    "value": "1,013",
+    "description": "MSFT"
+  },
+  {
+    "id": "6637f764-48b1-401b-baa5-1ab484ae7aab",
+    "date": "2024-10-05",
+    "value": "$543.43",
+    "description": "MSFT"
+  },
+  {
+    "id": "b12730fa-7470-42be-af1d-0a9870574589",
+    "date": "2024-10-08",
+    "value": "840",
+    "description": "MSFT"
+  },
+  {
+    "id": "de93f9cc-64ed-4045-acae-adc053a387e9",
+    "date": "2024-10-11",
+    "value": "967",
+    "description": "MSFT"
+  },
+  {
+    "id": "5ab5f27d-e8d4-4957-81d3-aaed790f62fb",
+    "date": "2024-10-14",
+    "value": "544",
+    "description": "MSFT"
+  },
+  {
+    "id": "2d321979-9e40-42c6-b6c3-556365a1a64e",
+    "date": "2024-10-17",
+    "value": "$454.10",
+    "description": "MSFT"
+  },
+  {
+    "id": "8aef5bc5-07a9-4337-bd40-647f4c696cb7",
+    "date": "2024-10-20",
+    "value": "$645.03",
+    "description": "MSFT"
+  },
+  {
+    "id": "faf7fa30-2db2-4c7d-832f-bcc2b97d0af3",
+    "date": "2024-10-23",
+    "value": "581",
+    "description": "MSFT"
+  },
+  {
+    "id": "d264ecf6-8db1-4ef5-af32-0d4492a4566f",
+    "date": "2024-10-26",
+    "value": "$589.65",
+    "description": "MSFT"
+  },
+  {
+    "id": "fbc600f0-1fd9-42ed-85e3-215050f94d6c",
+    "date": "2024-10-29",
+    "value": "625",
+    "description": "MSFT"
+  },
+  {
+    "id": "71c5a017-0c54-4c48-96b7-84cb72f8284a",
+    "date": "2024-11-01",
+    "value": "$67.95",
+    "description": "MSFT"
+  },
+  {
+    "id": "2094a81c-4cab-42aa-89ff-befbcd6a8632",
+    "date": "2024-11-04",
+    "value": "$108.22",
+    "description": "MSFT"
+  },
+  {
+    "id": "b988b91b-11f1-4fa9-8c5b-3fef02908843",
+    "date": "2024-11-07",
+    "value": "117",
+    "description": "MSFT"
+  },
+  {
+    "id": "e47d3aa8-f191-46a1-8655-a874a4e82f90",
+    "date": "2024-11-10",
+    "value": "763",
+    "description": "MSFT"
+  },
+  {
+    "id": "20c81053-a6e5-4437-9ea1-47508b08fc0b",
+    "date": "2024-11-13",
+    "value": "883",
+    "description": "MSFT"
+  },
+  {
+    "id": "94ceb3f3-f9da-44f5-ad12-02d9f2efffcd",
+    "date": "2024-11-16",
+    "value": "322",
+    "description": "MSFT"
+  },
+  {
+    "id": "b6a23a24-f50e-4d00-8282-d540ae01848b",
+    "date": "2024-11-19",
+    "value": "$359.50",
+    "description": "MSFT"
+  },
+  {
+    "id": "d81b36fe-830c-4d32-8ed7-5b8ac3b1412c",
+    "date": "2024-11-22",
+    "value": "$282.27",
+    "description": "MSFT"
+  },
+  {
+    "id": "ff301612-532e-45d3-b426-e569cbabd3d0",
+    "date": "2024-11-25",
+    "value": "224",
+    "description": "MSFT"
+  },
+  {
+    "id": "93ec8f63-afc0-4370-926a-68335e50677b",
+    "date": "2024-11-28",
+    "value": "$616.85",
+    "description": "MSFT"
+  },
+  {
+    "id": "d75daf53-cf2c-444d-a8b9-7a62e9793047",
+    "date": "2024-12-01",
+    "value": "336",
+    "description": "MSFT"
+  },
+  {
+    "id": "1f3602b3-4ef3-44ba-af32-f67ab955d255",
+    "date": "2024-12-04",
+    "value": "148",
+    "description": "MSFT"
+  },
+  {
+    "id": "39df433b-c082-4cfe-b4be-ca5d9ac67f2b",
+    "date": "2024-12-07",
+    "value": "$868.70",
+    "description": "MSFT"
+  },
+  {
+    "id": "be38d4bb-ebd1-43d6-a037-360b725c7ca2",
+    "date": "2024-12-10",
+    "value": "$807.89",
+    "description": "MSFT"
+  },
+  {
+    "id": "76cd1347-77f7-44e1-982c-cbed95893638",
+    "date": "2024-12-13",
+    "value": "536",
+    "description": "MSFT"
+  },
+  {
+    "id": "dc913239-4cc3-4042-ad25-80a4c704f072",
+    "date": "2024-12-16",
+    "value": "$1035.34",
+    "description": "MSFT"
+  },
+  {
+    "id": "7780af6f-038b-481a-bb5b-d6ee8e509778",
+    "date": "2024-12-19",
+    "value": "748",
+    "description": "MSFT"
+  },
+  {
+    "id": "5ced5d32-4e60-49b5-a10f-d93ed2f7175c",
+    "date": "2024-12-22",
+    "value": "$1104.37",
+    "description": "MSFT"
+  },
+  {
+    "id": "425f77b7-f7dc-4183-bbfc-c92868d7f77a",
+    "date": "2024-12-25",
+    "value": "$1072.92",
+    "description": "MSFT"
+  },
+  {
+    "id": "e7ebf143-e134-408a-b840-6a46c665cd98",
+    "date": "2024-12-28",
+    "value": "$262.10",
+    "description": "MSFT"
+  },
+  {
+    "id": "af6b550e-740e-4d4d-9630-3663f61a7503",
+    "date": "2024-12-31",
+    "value": "804",
+    "description": "MSFT"
+  },
+  {
+    "id": "eb70ce70-9600-4a81-acdc-8ef6252925a7",
+    "date": "2025-01-03",
+    "value": "737",
+    "description": "MSFT"
+  },
+  {
+    "id": "2474578e-f281-487d-8570-2ecdc0c3d328",
+    "date": "2025-01-06",
+    "value": "$576.19",
+    "description": "MSFT"
+  },
+  {
+    "id": "9d46ff32-036f-4978-bbc9-a6abcf0baf57",
+    "date": "2025-01-09",
+    "value": "$725.07",
+    "description": "MSFT"
+  },
+  {
+    "id": "24937fe4-b90e-4c5d-bc7b-f6e18b16b8cd",
+    "date": "2025-01-12",
+    "value": "708",
+    "description": "MSFT"
+  },
+  {
+    "id": "6bed0b62-49ba-4bef-b86b-91099fba6d47",
+    "date": "2025-01-15",
+    "value": "943",
+    "description": "MSFT"
+  },
+  {
+    "id": "f750905e-2804-4f79-b5e0-8f79501c6000",
+    "date": "2025-01-18",
+    "value": "$1203.87",
+    "description": "MSFT"
+  },
+  {
+    "id": "20b26e73-fde9-42bf-9fd6-f617fe4830e8",
+    "date": "2025-01-21",
+    "value": "629",
+    "description": "MSFT"
+  },
+  {
+    "id": "d432b567-d161-49c0-b9ad-35763e011538",
+    "date": "2025-01-24",
+    "value": "$1044.85",
+    "description": "MSFT"
+  },
+  {
+    "id": "dfd16c79-05da-42be-bdfd-85a4de27da6e",
+    "date": "2025-01-27",
+    "value": "$627.96",
+    "description": "MSFT"
+  },
+  {
+    "id": "a995f136-9e2e-4ba3-9f88-dbcf14e38201",
+    "date": "2025-01-30",
+    "value": "1,106",
+    "description": "MSFT"
+  },
+  {
+    "id": "0329a95d-2790-4db3-9af6-4d4c5328d12f",
+    "date": "2025-02-02",
+    "value": "$156.47",
+    "description": "MSFT"
+  },
+  {
+    "id": "5f4311c9-75e4-408d-a090-0e100138c717",
+    "date": "2025-02-05",
+    "value": "112",
+    "description": "MSFT"
+  },
+  {
+    "id": "8e0b453d-588a-4e52-b483-3ad48be9489c",
+    "date": "2025-02-08",
+    "value": "1,240",
+    "description": "MSFT"
+  },
+  {
+    "id": "f6e3b5a4-2aa0-4c28-993f-87b62aefe70e",
+    "date": "2025-02-11",
+    "value": "1,215",
+    "description": "MSFT"
+  },
+  {
+    "id": "3ad23037-988f-414e-a6dc-fa06c3c4b668",
+    "date": "2025-02-14",
+    "value": "1,045",
+    "description": "MSFT"
+  },
+  {
+    "id": "f2b42062-2da1-4bee-8419-5eab58b653b8",
+    "date": "2025-02-17",
+    "value": "423",
+    "description": "MSFT"
+  },
+  {
+    "id": "872f72ad-29f0-48d3-a9bc-c257c7f2c8cb",
+    "date": "2025-02-20",
+    "value": "473",
+    "description": "MSFT"
+  },
+  {
+    "id": "e5cec1ed-0530-447b-b26a-3669badc4a4a",
+    "date": "2025-02-23",
+    "value": "$468.11",
+    "description": "MSFT"
+  },
+  {
+    "id": "629e563a-cf3d-47c4-a391-7451f17f1486",
+    "date": "2025-02-26",
+    "value": "$580.15",
+    "description": "MSFT"
+  },
+  {
+    "id": "42d4d3f1-50e4-4aaa-af80-361a3a6c29cd",
+    "date": "2025-03-01",
+    "value": "579",
+    "description": "MSFT"
+  },
+  {
+    "id": "5a8197f1-5514-411b-a8ac-621c293b1c9b",
+    "date": "2025-03-04",
+    "value": "446",
+    "description": "MSFT"
+  },
+  {
+    "id": "c0f24b1e-31da-478c-9176-0591c6e09c43",
+    "date": "2025-03-07",
+    "value": "645",
+    "description": "MSFT"
+  },
+  {
+    "id": "5c435c9d-d38e-43e6-9440-694843fc79b4",
+    "date": "2025-03-10",
+    "value": "$1232.13",
+    "description": "MSFT"
+  },
+  {
+    "id": "1b9cec1a-ce5c-4d8a-a8ba-b4ee9fc1c642",
+    "date": "2025-03-13",
+    "value": "655",
+    "description": "MSFT"
+  },
+  {
+    "id": "886d00b8-b4de-4074-9f9e-e6e66dd6a586",
+    "date": "2025-03-16",
+    "value": "$580.21",
+    "description": "MSFT"
+  },
+  {
+    "id": "7833b4c2-27d8-4414-9b60-c062f9269909",
+    "date": "2025-03-19",
+    "value": "481",
+    "description": "MSFT"
+  },
+  {
+    "id": "f1ccb2e9-5850-4265-bac9-163ee7e43648",
+    "date": "2025-03-22",
+    "value": "836",
+    "description": "MSFT"
+  },
+  {
+    "id": "f4bac56f-2c67-4da2-819b-063c6b71aba4",
+    "date": "2025-03-25",
+    "value": "$57.03",
+    "description": "MSFT"
+  },
+  {
+    "id": "3c249971-a188-4a86-8d47-874967cb83c8",
+    "date": "2025-03-28",
+    "value": "769",
+    "description": "MSFT"
+  },
+  {
+    "id": "67ec96e1-8a63-417c-8683-9a26fc375e1f",
+    "date": "2025-03-31",
+    "value": "655",
+    "description": "MSFT"
+  },
+  {
+    "id": "ed029e05-2bff-4fc3-a29f-f7a4bbe47877",
+    "date": "2025-04-03",
+    "value": "$369.30",
+    "description": "MSFT"
+  },
+  {
+    "id": "b1b3bf60-1390-4290-9cac-f52f42767f63",
+    "date": "2025-04-06",
+    "value": "452",
+    "description": "MSFT"
+  },
+  {
+    "id": "21c3c380-164d-4336-8596-00a9c216c426",
+    "date": "2025-04-09",
+    "value": "$319.82",
+    "description": "MSFT"
+  },
+  {
+    "id": "60ec6604-3422-4154-b736-e29a761bf258",
+    "date": "2025-04-12",
+    "value": "400",
+    "description": "MSFT"
+  },
+  {
+    "id": "b423b061-777e-45c8-a718-180048d7fdd3",
+    "date": "2025-04-15",
+    "value": "$462.07",
+    "description": "MSFT"
+  },
+  {
+    "id": "81ba631d-f56c-43e9-8268-36a04dd5a565",
+    "date": "2025-04-18",
+    "value": "296",
+    "description": "MSFT"
+  },
+  {
+    "id": "2e5572e4-f8a4-480b-8d18-4f230015c61c",
+    "date": "2025-04-21",
+    "value": "713",
+    "description": "MSFT"
+  },
+  {
+    "id": "042858cb-43e4-4938-b728-3f8c4db7c6b3",
+    "date": "2025-04-24",
+    "value": "$349.94",
+    "description": "MSFT"
+  }
+]
