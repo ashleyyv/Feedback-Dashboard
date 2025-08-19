@@ -1,0 +1,602 @@
+[
+  {
+    "id": "41085aba-4bc1-4a3d-9f90-da65293bc01b",
+    "date": "2024-07-01",
+    "value": "819",
+    "description": "AAPL"
+  },
+  {
+    "id": "db92f228-3e03-432c-a5d1-004db93c8786",
+    "date": "2024-07-04",
+    "value": "$545.45",
+    "description": "AAPL"
+  },
+  {
+    "id": "503e7f95-0ea0-4d99-85b8-c8189d217845",
+    "date": "2024-07-07",
+    "value": "$426.07",
+    "description": "AAPL"
+  },
+  {
+    "id": "46a2b295-206b-4750-b147-057b704d6167",
+    "date": "2024-07-10",
+    "value": "$862.66",
+    "description": "AAPL"
+  },
+  {
+    "id": "281f80e0-5eba-449d-ab96-145e1b65518c",
+    "date": "2024-07-13",
+    "value": "856",
+    "description": "AAPL"
+  },
+  {
+    "id": "f515fad2-65da-43df-b790-a38827295715",
+    "date": "2024-07-16",
+    "value": "$625.47",
+    "description": "AAPL"
+  },
+  {
+    "id": "d9372972-32b1-485a-9015-9392f8c8e64b",
+    "date": "2024-07-19",
+    "value": "279",
+    "description": "AAPL"
+  },
+  {
+    "id": "d2f56cbb-9ebb-40ae-863a-868a4a7f16d1",
+    "date": "2024-07-22",
+    "value": "73",
+    "description": "AAPL"
+  },
+  {
+    "id": "51f0cd02-0bba-4869-824a-c863d3c864d0",
+    "date": "2024-07-25",
+    "value": "736",
+    "description": "AAPL"
+  },
+  {
+    "id": "767741e3-891c-4bce-a496-2df64e5f0661",
+    "date": "2024-07-28",
+    "value": "$397.95",
+    "description": "AAPL"
+  },
+  {
+    "id": "66839ffb-1ca2-4f26-acd3-a5ec337e5726",
+    "date": "2024-07-31",
+    "value": "999",
+    "description": "AAPL"
+  },
+  {
+    "id": "fb366c97-765a-4c58-a429-f598444eca19",
+    "date": "2024-08-03",
+    "value": "$831.09",
+    "description": "AAPL"
+  },
+  {
+    "id": "0e462159-4026-4994-9920-cd7b94fdb6cb",
+    "date": "2024-08-06",
+    "value": "931",
+    "description": "AAPL"
+  },
+  {
+    "id": "db6a7e35-0452-493d-ab83-30885fd512e3",
+    "date": "2024-08-09",
+    "value": "$862.85",
+    "description": "AAPL"
+  },
+  {
+    "id": "91e7605b-3c83-4c8b-b9c6-94bdd09a58c4",
+    "date": "2024-08-12",
+    "value": "231",
+    "description": "AAPL"
+  },
+  {
+    "id": "491c002c-4754-4e69-a878-52c4f3115924",
+    "date": "2024-08-15",
+    "value": "801",
+    "description": "AAPL"
+  },
+  {
+    "id": "d6b2fa43-baf5-4083-ad8b-cd28ede3588f",
+    "date": "2024-08-18",
+    "value": "514",
+    "description": "AAPL"
+  },
+  {
+    "id": "41ce35f4-c831-4c47-9684-06028e7105ff",
+    "date": "2024-08-21",
+    "value": "210",
+    "description": "AAPL"
+  },
+  {
+    "id": "5cb2ce21-62ae-4ca6-9355-b0489577bf09",
+    "date": "2024-08-24",
+    "value": "$1112.56",
+    "description": "AAPL"
+  },
+  {
+    "id": "bd2dd5e3-5d8f-4f27-8f51-70815ca377fe",
+    "date": "2024-08-27",
+    "value": "24",
+    "description": "AAPL"
+  },
+  {
+    "id": "d4da06d9-81ae-4ce0-b03b-50995aaaf89f",
+    "date": "2024-08-30",
+    "value": "345",
+    "description": "AAPL"
+  },
+  {
+    "id": "f6ed31ba-45a2-4f18-92cd-675245872ee8",
+    "date": "2024-09-02",
+    "value": "793",
+    "description": "AAPL"
+  },
+  {
+    "id": "b3cef75c-072e-45a7-9cd8-500b29ab822d",
+    "date": "2024-09-05",
+    "value": "15",
+    "description": "AAPL"
+  },
+  {
+    "id": "f322d92b-8294-4c8b-8c78-3c4a642352e9",
+    "date": "2024-09-08",
+    "value": "$999.07",
+    "description": "AAPL"
+  },
+  {
+    "id": "438eff70-e222-4755-b4cc-6a449ceeb896",
+    "date": "2024-09-11",
+    "value": "330",
+    "description": "AAPL"
+  },
+  {
+    "id": "e52518b4-d6af-4199-8f5f-d6d669cf8a7d",
+    "date": "2024-09-14",
+    "value": "628",
+    "description": "AAPL"
+  },
+  {
+    "id": "f30e9f33-4a47-4b64-bcf4-ee701cce194f",
+    "date": "2024-09-17",
+    "value": "$460.42",
+    "description": "AAPL"
+  },
+  {
+    "id": "3745476d-0ec7-488b-8d11-2e9f666b49d9",
+    "date": "2024-09-20",
+    "value": "960",
+    "description": "AAPL"
+  },
+  {
+    "id": "15485582-1ee8-4524-992c-48f04db7783b",
+    "date": "2024-09-23",
+    "value": "802",
+    "description": "AAPL"
+  },
+  {
+    "id": "2e989a76-8870-43bb-980e-3b961c79a8c9",
+    "date": "2024-09-26",
+    "value": "$446.55",
+    "description": "AAPL"
+  },
+  {
+    "id": "87dd0c2c-34a5-4236-af17-3cd6b6175bee",
+    "date": "2024-09-29",
+    "value": "778",
+    "description": "AAPL"
+  },
+  {
+    "id": "f7cdd1db-5a0b-400c-a8fc-5120896d060d",
+    "date": "2024-10-02",
+    "value": "344",
+    "description": "AAPL"
+  },
+  {
+    "id": "82ff3f8f-4200-449a-82b4-2e2b49c67c46",
+    "date": "2024-10-05",
+    "value": "$83.98",
+    "description": "AAPL"
+  },
+  {
+    "id": "bd2895c5-8251-4235-b7f8-ef57b670987c",
+    "date": "2024-10-08",
+    "value": "669",
+    "description": "AAPL"
+  },
+  {
+    "id": "79aa1cfa-55fb-4f8c-86f7-f73f2ff8e869",
+    "date": "2024-10-11",
+    "value": "56",
+    "description": "AAPL"
+  },
+  {
+    "id": "2a36e98a-992d-470a-a781-07fd25f6a16f",
+    "date": "2024-10-14",
+    "value": "472",
+    "description": "AAPL"
+  },
+  {
+    "id": "c6e0f48c-c5f7-422b-86a2-c6b720b64614",
+    "date": "2024-10-17",
+    "value": "1,033",
+    "description": "AAPL"
+  },
+  {
+    "id": "2adf2e0e-8111-4ce6-953c-770780b899a8",
+    "date": "2024-10-20",
+    "value": "$252.21",
+    "description": "AAPL"
+  },
+  {
+    "id": "f713619d-a6c4-40e2-9a79-16e2ab5f8831",
+    "date": "2024-10-23",
+    "value": "246",
+    "description": "AAPL"
+  },
+  {
+    "id": "beb1fd13-8025-406e-bd48-e14030551399",
+    "date": "2024-10-26",
+    "value": "$1015.90",
+    "description": "AAPL"
+  },
+  {
+    "id": "b15e4595-f631-4a0c-b1b9-c420ca35d01f",
+    "date": "2024-10-29",
+    "value": "$397.25",
+    "description": "AAPL"
+  },
+  {
+    "id": "efecc040-8566-4e8d-822e-e69cbfe023ee",
+    "date": "2024-11-01",
+    "value": "$761.41",
+    "description": "AAPL"
+  },
+  {
+    "id": "f8eb25ae-7e9f-4ca7-a9a7-5e0830838b25",
+    "date": "2024-11-04",
+    "value": "$460.40",
+    "description": "AAPL"
+  },
+  {
+    "id": "c84997ce-7117-46c7-b806-22a5bba4e7e1",
+    "date": "2024-11-07",
+    "value": "$504.99",
+    "description": "AAPL"
+  },
+  {
+    "id": "54eb1405-68bd-4aa4-9454-3864cfd96c90",
+    "date": "2024-11-10",
+    "value": "$134.82",
+    "description": "AAPL"
+  },
+  {
+    "id": "1086e96f-8b77-4003-b646-8a5e0b21a026",
+    "date": "2024-11-13",
+    "value": "$720.21",
+    "description": "AAPL"
+  },
+  {
+    "id": "408b919d-cf61-404e-bc75-a36ebdb4f670",
+    "date": "2024-11-16",
+    "value": "125",
+    "description": "AAPL"
+  },
+  {
+    "id": "5a63903e-17c6-4b36-9a6d-5bc5bf12713f",
+    "date": "2024-11-19",
+    "value": "$346.25",
+    "description": "AAPL"
+  },
+  {
+    "id": "9f54c6b0-1147-4d35-8f06-ea93ee02aa58",
+    "date": "2024-11-22",
+    "value": "$383.05",
+    "description": "AAPL"
+  },
+  {
+    "id": "de06e327-7740-485c-a777-778f7277ebc7",
+    "date": "2024-11-25",
+    "value": "1,010",
+    "description": "AAPL"
+  },
+  {
+    "id": "3d7cbc5c-6656-458d-bf07-b0e69e8a14d0",
+    "date": "2024-11-28",
+    "value": "362",
+    "description": "AAPL"
+  },
+  {
+    "id": "716a67c7-5ea8-4c5b-84b3-ff7ea691195a",
+    "date": "2024-12-01",
+    "value": "1,130",
+    "description": "AAPL"
+  },
+  {
+    "id": "4dd1080d-4344-4da8-9f6f-7a67fc8dff7c",
+    "date": "2024-12-04",
+    "value": "680",
+    "description": "AAPL"
+  },
+  {
+    "id": "7f7b77c5-57f3-4969-b2ff-ca24f4dd80a9",
+    "date": "2024-12-07",
+    "value": "$87.50",
+    "description": "AAPL"
+  },
+  {
+    "id": "6c03ebe0-5cc0-48dc-8284-beca5e4a1697",
+    "date": "2024-12-10",
+    "value": "$961.26",
+    "description": "AAPL"
+  },
+  {
+    "id": "f9e09273-1951-40a4-8c89-f282d2c9b249",
+    "date": "2024-12-13",
+    "value": "1,086",
+    "description": "AAPL"
+  },
+  {
+    "id": "9b2cc912-6718-4ba7-bd54-26dbf4c53068",
+    "date": "2024-12-16",
+    "value": "$619.12",
+    "description": "AAPL"
+  },
+  {
+    "id": "c3c5cb06-34b9-44a3-9b17-cbb3bfab34bd",
+    "date": "2024-12-19",
+    "value": "$418.37",
+    "description": "AAPL"
+  },
+  {
+    "id": "ae45ffdf-ad00-48a6-bb49-b13e97a75297",
+    "date": "2024-12-22",
+    "value": "$16.81",
+    "description": "AAPL"
+  },
+  {
+    "id": "0b5e7c63-491b-427d-a080-6b39a15cfe10",
+    "date": "2024-12-25",
+    "value": "$782.52",
+    "description": "AAPL"
+  },
+  {
+    "id": "63cd8fdd-73f5-41a0-a679-1662106b876e",
+    "date": "2024-12-28",
+    "value": "569",
+    "description": "AAPL"
+  },
+  {
+    "id": "94259bf4-9fb6-40da-aeab-8c3f30a7093a",
+    "date": "2024-12-31",
+    "value": "274",
+    "description": "AAPL"
+  },
+  {
+    "id": "2692fcb1-a54c-4af9-b946-d38cad3df819",
+    "date": "2025-01-03",
+    "value": "160",
+    "description": "AAPL"
+  },
+  {
+    "id": "ebfce675-98e9-42a4-8cfb-e2b56585a103",
+    "date": "2025-01-06",
+    "value": "622",
+    "description": "AAPL"
+  },
+  {
+    "id": "ff7a0119-120a-4f43-beac-b88e1632b09c",
+    "date": "2025-01-09",
+    "value": "$338.48",
+    "description": "AAPL"
+  },
+  {
+    "id": "b3ddb375-1dd1-430c-9e4d-99be6c55a033",
+    "date": "2025-01-12",
+    "value": "547",
+    "description": "AAPL"
+  },
+  {
+    "id": "28b77306-0981-40c3-b483-cd18451a99d6",
+    "date": "2025-01-15",
+    "value": "$787.72",
+    "description": "AAPL"
+  },
+  {
+    "id": "1de74fc5-aaa0-4b35-8f21-e02cf93eb832",
+    "date": "2025-01-18",
+    "value": "154",
+    "description": "AAPL"
+  },
+  {
+    "id": "c1d81232-8bfd-45ff-b460-f7992cbfd4d8",
+    "date": "2025-01-21",
+    "value": "91",
+    "description": "AAPL"
+  },
+  {
+    "id": "8c347f5e-d7ca-4fa3-907a-48b7dfb12c54",
+    "date": "2025-01-24",
+    "value": "1,169",
+    "description": "AAPL"
+  },
+  {
+    "id": "951c27f6-5042-4588-86c2-f9df091f5844",
+    "date": "2025-01-27",
+    "value": "$601.99",
+    "description": "AAPL"
+  },
+  {
+    "id": "046701f1-caeb-4b36-968f-3a55ae503c0d",
+    "date": "2025-01-30",
+    "value": "$578.80",
+    "description": "AAPL"
+  },
+  {
+    "id": "99289dad-a86a-4e33-9824-04f6b0103421",
+    "date": "2025-02-02",
+    "value": "$1284.27",
+    "description": "AAPL"
+  },
+  {
+    "id": "980671f1-0100-45d5-8ac2-0244f9b05f5c",
+    "date": "2025-02-05",
+    "value": "1,101",
+    "description": "AAPL"
+  },
+  {
+    "id": "3faaca8e-f63f-4818-8fa4-1563c93560df",
+    "date": "2025-02-08",
+    "value": "254",
+    "description": "AAPL"
+  },
+  {
+    "id": "e31b8c44-1d0d-4275-a759-53160608d681",
+    "date": "2025-02-11",
+    "value": "$707.01",
+    "description": "AAPL"
+  },
+  {
+    "id": "3e0aa9e1-cac4-4601-913f-aff71e4483c6",
+    "date": "2025-02-14",
+    "value": "891",
+    "description": "AAPL"
+  },
+  {
+    "id": "648c9b39-360d-47e6-94e2-e2ddb68d8ca9",
+    "date": "2025-02-17",
+    "value": "$884.36",
+    "description": "AAPL"
+  },
+  {
+    "id": "466a409d-e2dd-44ac-85c7-3990153c4ba7",
+    "date": "2025-02-20",
+    "value": "$986.44",
+    "description": "AAPL"
+  },
+  {
+    "id": "8a60a840-6841-41fb-804d-011165e32c5b",
+    "date": "2025-02-23",
+    "value": "164",
+    "description": "AAPL"
+  },
+  {
+    "id": "fa9909c6-89f8-40b5-8fac-cfb9cf7fe782",
+    "date": "2025-02-26",
+    "value": "1,223",
+    "description": "AAPL"
+  },
+  {
+    "id": "15098d73-9bd4-4252-8b70-dccdb14160d9",
+    "date": "2025-03-01",
+    "value": "400",
+    "description": "AAPL"
+  },
+  {
+    "id": "fbaca7cd-5cb9-4743-9365-64302f38e918",
+    "date": "2025-03-04",
+    "value": "$234.84",
+    "description": "AAPL"
+  },
+  {
+    "id": "faf2531b-91c5-4a20-bc8a-bf96c32d8f02",
+    "date": "2025-03-07",
+    "value": "1,097",
+    "description": "AAPL"
+  },
+  {
+    "id": "969b10ce-a3b4-4091-ac8d-596573281e93",
+    "date": "2025-03-10",
+    "value": "738",
+    "description": "AAPL"
+  },
+  {
+    "id": "7749c9eb-3e99-4a76-a58d-4b578257c87e",
+    "date": "2025-03-13",
+    "value": "998",
+    "description": "AAPL"
+  },
+  {
+    "id": "c4c082bb-3ded-44f1-ad78-f1ab30566b8e",
+    "date": "2025-03-16",
+    "value": "40",
+    "description": "AAPL"
+  },
+  {
+    "id": "44f9b1e2-75a6-4229-8758-87f995452b5f",
+    "date": "2025-03-19",
+    "value": "$1245.89",
+    "description": "AAPL"
+  },
+  {
+    "id": "e6d081bf-4bff-4c3f-8554-0daa5a7b6928",
+    "date": "2025-03-22",
+    "value": "$1427.45",
+    "description": "AAPL"
+  },
+  {
+    "id": "7d3eeb4a-0f2e-4ff6-ab61-c7d600fe7185",
+    "date": "2025-03-25",
+    "value": "$376.60",
+    "description": "AAPL"
+  },
+  {
+    "id": "c98543eb-c689-4e5f-86ea-2a56a5d75594",
+    "date": "2025-03-28",
+    "value": "$869.93",
+    "description": "AAPL"
+  },
+  {
+    "id": "ef111a7e-875d-4c21-a65a-3c7f843d4e23",
+    "date": "2025-03-31",
+    "value": "379",
+    "description": "AAPL"
+  },
+  {
+    "id": "9b778649-07d0-49f6-9fa3-47216093f16c",
+    "date": "2025-04-03",
+    "value": "$298.90",
+    "description": "AAPL"
+  },
+  {
+    "id": "85d4bdf3-9651-4e41-b230-dbb8d008b69d",
+    "date": "2025-04-06",
+    "value": "568",
+    "description": "AAPL"
+  },
+  {
+    "id": "66ed39f1-2b0d-4f28-9e6c-f5f3d86d5ba3",
+    "date": "2025-04-09",
+    "value": "216",
+    "description": "AAPL"
+  },
+  {
+    "id": "640ad122-adec-406e-b4a4-42c85d4129d4",
+    "date": "2025-04-12",
+    "value": "$1435.09",
+    "description": "AAPL"
+  },
+  {
+    "id": "2e417889-9f21-43bb-bebe-0f5a24be7a4c",
+    "date": "2025-04-15",
+    "value": "$85.54",
+    "description": "AAPL"
+  },
+  {
+    "id": "dcc2e8cd-12e6-4e40-b56a-a68325d4e172",
+    "date": "2025-04-18",
+    "value": "361",
+    "description": "AAPL"
+  },
+  {
+    "id": "8072e22e-26e2-427c-b62c-38d1fa7f8109",
+    "date": "2025-04-21",
+    "value": "133",
+    "description": "AAPL"
+  },
+  {
+    "id": "a7e17c10-c87c-4f1f-9e61-10c60e873f30",
+    "date": "2025-04-24",
+    "value": "$109.91",
+    "description": "AAPL"
+  }
+]
