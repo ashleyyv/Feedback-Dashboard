@@ -51,11 +51,11 @@ export default function ProjectPortfolioPage() {
     { icon: <DashboardIcon />, text: 'Dashboard', active: true },
     { icon: <PersonIcon />, text: 'Users' },
     { icon: <SettingsIcon />, text: 'Settings' },
-    { icon: <DocumentIcon />, text: 'Documents' },
-    { icon: <MoneyIcon />, text: 'Finance' },
-    { icon: <InventoryIcon />, text: 'Inventory' },
+    { icon: <DocumentIcon />, text: 'Documentation' },
+    { icon: <MoneyIcon />, text: 'Billing' },
     { icon: <AnalyticsIcon />, text: 'Analytics' },
-    { icon: <LinkIcon />, text: 'Integrations' },
+    { icon: <LinkIcon />, text: 'APIs & Integrations' },
+    { icon: <HelpIcon />, text: 'Support' },
   ];
 
   return (
@@ -83,10 +83,10 @@ export default function ProjectPortfolioPage() {
               width: 40,
               height: 40
             }}>
-              D
+              B
             </Avatar>
             <Typography variant="h6" sx={{ color: 'primary.main', fontWeight: 'bold' }}>
-              Denovers
+              Bloomberg
             </Typography>
           </Box>
         </Box>
@@ -136,7 +136,7 @@ export default function ProjectPortfolioPage() {
           {/* Header */}
           <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 3 }}>
             <Typography variant="h4" sx={{ color: 'text.primary', fontWeight: 'bold' }}>
-              Project Portfolios
+              Bloomberg Product Portfolio
             </Typography>
           </Box>
 
@@ -167,9 +167,9 @@ export default function ProjectPortfolioPage() {
             />
             
             <FormControl size="small" sx={{ minWidth: 150 }}>
-              <InputLabel sx={{ color: 'text.secondary' }}>Project Type</InputLabel>
+              <InputLabel sx={{ color: 'text.secondary' }}>Product Type</InputLabel>
               <Select
-                label="Project Type"
+                label="Product Type"
                 sx={{
                   backgroundColor: 'background.paper',
                   '& .MuiOutlinedInput-notchedOutline': {
@@ -177,17 +177,18 @@ export default function ProjectPortfolioPage() {
                   },
                 }}
               >
-                <MenuItem value="all">All Types</MenuItem>
-                <MenuItem value="construction">Construction</MenuItem>
-                <MenuItem value="renovation">Renovation</MenuItem>
-                <MenuItem value="expansion">Expansion</MenuItem>
+                <MenuItem value="all">All Products</MenuItem>
+                <MenuItem value="terminal">Bloomberg Terminal</MenuItem>
+                <MenuItem value="api">Bloomberg API</MenuItem>
+                <MenuItem value="news">News & Analytics</MenuItem>
+                <MenuItem value="core">Core Systems</MenuItem>
               </Select>
             </FormControl>
             
             <FormControl size="small" sx={{ minWidth: 150 }}>
-              <InputLabel sx={{ color: 'text.secondary' }}>Location</InputLabel>
+              <InputLabel sx={{ color: 'text.secondary' }}>User Type</InputLabel>
               <Select
-                label="Location"
+                label="User Type"
                 sx={{
                   backgroundColor: 'background.paper',
                   '& .MuiOutlinedInput-notchedOutline': {
@@ -195,17 +196,18 @@ export default function ProjectPortfolioPage() {
                   },
                 }}
               >
-                <MenuItem value="all">All Locations</MenuItem>
-                <MenuItem value="north">North America</MenuItem>
-                <MenuItem value="europe">Europe</MenuItem>
-                <MenuItem value="asia">Asia Pacific</MenuItem>
+                <MenuItem value="all">All Users</MenuItem>
+                <MenuItem value="traders">Traders</MenuItem>
+                <MenuItem value="analysts">Analysts</MenuItem>
+                <MenuItem value="institutions">Financial Institutions</MenuItem>
+                <MenuItem value="professionals">Investment Professionals</MenuItem>
               </Select>
             </FormControl>
             
             <FormControl size="small" sx={{ minWidth: 150 }}>
-              <InputLabel sx={{ color: 'text.secondary' }}>Status</InputLabel>
+              <InputLabel sx={{ color: 'text.secondary' }}>Performance</InputLabel>
               <Select
-                label="Status"
+                label="Performance"
                 sx={{
                   backgroundColor: 'background.paper',
                   '& .MuiOutlinedInput-notchedOutline': {
@@ -213,15 +215,16 @@ export default function ProjectPortfolioPage() {
                   },
                 }}
               >
-                <MenuItem value="all">All Status</MenuItem>
-                <MenuItem value="on-track">On Track</MenuItem>
-                <MenuItem value="at-risk">At Risk</MenuItem>
-                <MenuItem value="critical">Critical</MenuItem>
+                <MenuItem value="all">All Performance</MenuItem>
+                <MenuItem value="excellent">Excellent</MenuItem>
+                <MenuItem value="good">Good</MenuItem>
+                <MenuItem value="needs-improvement">Needs Improvement</MenuItem>
+                <MenuItem value="critical">Critical Issues</MenuItem>
               </Select>
             </FormControl>
           </Box>
 
-          {/* Project Cards Grid */}
+          {/* Product Cards Grid */}
           <Grid container spacing={2}>
             {dummyProjects.map((project) => (
               <Grid item xs={12} sm={6} lg={4} xl={3} key={project.id}>
